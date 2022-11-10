@@ -1,0 +1,170 @@
+/* check updates on styles.css - and copy them here for future reference*/
+
+/* styles for displays 500px and below */
+
+.faq-header-card {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 1pc;
+    padding: 1pc;
+
+
+}
+
+.faq-header-info {
+    width: 40%;
+
+}
+
+.faq-img {
+    width: 18pc;
+    background-blend-mode: darken;
+}
+
+.faq-title {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.faq-light {
+    color: #666;
+}
+
+.faq-linker {
+    font-size: .7rem;
+}
+
+
+.faq-main {
+    margin-top: 5pc;
+    display: grid;
+    font-size: .8pc;
+    grid-template-columns: 2.5fr 6fr;
+}
+
+.faq-nv {
+    height: 2.5pc;
+    color: black !important; /* Important declaration has been used since its absence removes color from the first faq-nav-btn;*/
+    border-left: .1pc solid blue;
+    padding: 1pc;
+    margin: 1pc;
+
+}
+
+.faq-content {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    padding: 1pc;
+    box-shadow: 0pc 0pc .9666pc .3pc #eee;
+    height: auto;
+    display: none;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.faq-content-cards {
+    display: flex;
+    justify-content: start;
+    gap: 1pc;
+    align-items: flex-start;
+}
+
+.faq-card {
+
+    width: 50%;
+    padding: .2pc;
+
+}
+
+.active, .faq-nv:hover {
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* styles for displays 500px and below */
+
+@media only screen and (min-width: 500px) {/*i hate using min-width - it goes out of control - this affects */
+    #faq-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #faq-wrapper > * {
+        font-size: 1rem;
+
+    }
+
+    .faq-header-card {
+        margin: 0 auto;
+        width: 98%;
+    }
+
+    .faq-text {
+        font-size: 1rem;
+    }
+
+    .faq-img {
+        width: 30pc;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #faq-wrapper {
+        display: flex;
+        flex-flow: column;
+    }
+    .faq-header-card {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .faq-header-info {
+        width: 100%;
+
+    }
+    #faq-wrapper > * {
+        font-size: 1rem;
+
+    }
+
+    .faq-text {
+        font-size: 1rem;
+    }
+
+    .faq-img {
+        width: 15pc;
+    }
+
+    .faq-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-nav {
+        display: flex;
+        overflow: scroll;
+        white-space: normal;
+    }
+
+    .faq-nv {
+        width: 100px;
+    }
+
+    .faq-content-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-card {
+        width: 100%;
+    }
+}
+
+
