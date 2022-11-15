@@ -4,7 +4,7 @@
 $clientName = htmlspecialchars($_POST['clientName']);
 $clientEmail= htmlspecialchars($_POST['clientEmail']);
 $clientPhone = htmlspecialchars($_POST['clientPhone']);
-$message = htmlspecialchars($_POST['clientRequest']);
+$clientRequest = htmlspecialchars($_POST['clientRequest']);
 $to = "denismytin@gmail.com";
 $subject = "Akkadian:New Help Request!";
 $txt ="Name = ". $clientName . "\r\n  Email = " . $clientEmail . "\r\n  Client Phone = " . $clientPhone . "\r\n Message = " . $clientRequest;
@@ -14,13 +14,13 @@ if($clientEmail!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:thank.html");
+header("Location:thankyou.html");
 
 /* Prepare autoresponder subject */
 $respond_subject = "Thank you for contacting us!";
 
 /* Prepare autoresponder message */
-$respond_message = "Hello!
+$respond_message = "Hello! 
 
 Thank you for contacting us! We will get back to you
 as soon as possible!
