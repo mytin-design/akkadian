@@ -1,0 +1,386 @@
+/* Adopted from w3 schools - https://www.w3schools.com/howto/howto_css_breadcrumbs.asp */
+
+/* style the list */
+
+:root {
+
+    /* strong, masculine, clean */
+    --sblue: #5c5ba7;
+    --sgreen: #43a472;
+    --swhite: #f0f0f0;
+    --sblack: #000000;
+
+    /* theme 1 */
+    --hd-bkcolor: #eee;
+    --web-title: rgb(4, 4, 48);
+    --main-bordercolor: #777;
+    --main-white: #fff;
+    --main-black: #000;
+    --light-gray: #999;
+    --medium-gray: rgba(8, 6, 22, 0.548);
+    --dark-gray: #666;
+    --container-bkcolor: rgba(247, 247, 247, 0.548);
+    --abs-bkcolor: blue;
+    --tabitems-color: #eee;
+
+    /* theme 2 */
+    --tsbk-main: linear-gradient( rgb(4, 2, 19), rgb(110, 78, 110));
+    --tsmain-font: rgb(185, 182, 185);
+    --tshd-bkcolor: #eee;
+    --tsweb-title: rgb(214, 211, 211);
+    --tsmain-bordercolor: #777;
+    --tsmain-white: rgb(255, 255, 255);
+    --tsmain-black: rgba(8, 2, 24, 0.829);
+    --tslight-gray: rgb(214, 211, 211);
+    --tsmedium-gray: rgb(195, 194, 197);
+    --tsdark-gray: #666;
+    --tscontainer-bkcolor: rgb(8, 2, 24);
+    --tsabs-bkcolor: rgb(4, 4, 19);
+    --tstabitems-color: #eee;
+
+
+    --blue-40: #45a1ff;
+--blue-50: #0a84ff;
+--blue-60: #0060df;
+--blue-70: #003eaa;
+--blue-80: #002275;
+--grey-30: #d7d7db;
+--grey-60: #4a4a4f;
+--grey-90-a10: rgba(12, 12, 13, 0.1);
+--grey-90-a20: rgba(12, 12, 13, 0.2);
+--grey-90-a30: rgba(12, 12, 13, 0.3);
+--grey-90-a50: rgba(12, 12, 13, 0.5);
+--grey-90-a60: rgba(12, 12, 13, 0.6);
+--green-50: #30e60b;
+--green-60: #12bc00;
+--green-70: #058b00;
+--green-80: #006504;
+--green-90: #003706;
+--orange-50: #ff9400;
+--red-40: #ff4f5e;
+--red-50: #ff0039;
+--red-60: #d70022;
+--red-70: #a4000f;
+--red-80: #5a0002;
+--red-90: #3e0200;
+--yellow-50: #ffe900;
+--yellow-60: #d7b600;
+--yellow-60-a30: rgba(215, 182, 0, 0.3);
+--yellow-70: #a47f00;
+--yellow-80: #715100;
+--yellow-90: #3e2800;
+    --amber: #ffb405;
+    --azure: #09f;
+    --barney: #a514be;
+    --black: #000;
+    --carolina: #95b0ff;
+    --cranberry: #a0002d;
+    --dark: #161e2d;
+    --darker: #161e2d;
+    --darkmagenta: #dc5eba;
+    --darkorange: #e9665b;
+    --dark-maroon: #230005;
+    --dark-royal-blue: #000069;
+    --green: #44c751;
+    --indigo: #3c0082;
+    --lemon-green: #afe600;
+    --light: #707070;
+    --lightorange: #fa9738;
+    --light-gold: #ffe650;
+    --light-royal-blue: #3c46ff;
+    --magenta: #df49e7;
+    --new-blue: #31a5e0;
+    --newblue: #31a5e0;
+    --orange: #ec5f23;
+    --pale-mauve: #fff0fa;
+    --pinkish-orange: #ff6138;
+    --purpley: #7350ff;
+    --reddish-orange: #e65a28;
+    --sapphire: #2e27ad;
+    --soft-blue: #32343a;
+    --tangerine: #f90;
+    --textcolor: #b5bdc9;
+    --white: #fff;
+    --bright-light-blue: #32c8ff;
+    --akkadianMain: #d2e3e9; 
+    --akkadianText: rgb(20, 3, 51);
+    --akadianStrong: var(--main-black);
+ 
+}
+
+html {
+    background-color: var(--main-white);
+}
+
+
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+}
+
+/* Display list items side by side */
+
+ul.breadcrumb li{
+    display: inline;
+    font-size: 18px;
+    background-color: #fff;
+
+}
+
+
+/* Add a slash symbol (/) before / behind each list item */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--akadianStrong);
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #555;
+}
+
+ul.breadcrumb li a:hover {
+    color: var(--black);
+}
+
+/* add a color on mouse-over */
+
+
+
+.prd-title-bx {
+    margin: 2pc auto;
+    width: 50%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.prd-form {
+    width: 100%;
+    margin-top: 5pc;
+
+}
+
+#prd_form {
+    width: 100%;
+    height: 3pc;
+    padding-left: 1pc;
+    background-color: #f9f5f7;
+    border: none;
+    border-radius: 2pc;
+
+}
+
+
+#prdsearchIcon {
+    position: absolute;
+    top: 45%;
+    left: 90%;
+
+}
+
+
+/* on screen sizes less than 998px - the .prd-wrapper has an overflow-y: scroll; */
+
+/* objective : parent container should hold all items inline with an overflow of scroll at the x axis */
+.prd-wrapper {
+    width: auto;
+    margin-top: 3pc;
+    padding: 2pc;
+    overflow: auto;
+    scrollbar-color: var(--black) var(--black);
+    white-space: nowrap;
+    display: flex;
+    gap: 1.5pc;
+}
+
+
+/* NIMEKWAMA!!!!!!* /
+/* problem: I cannot declare the correct alignment for descedant boxes to flow horizontally */
+/* solution - */
+
+/* W3 SCHOOLS SAYS: the trick to make it scrollable is by using overflow: auto and white-space: nowrap; */
+
+
+.prd-bg {
+    display: inline-block;
+    padding: 1pc;
+    width: 20pc;
+    height: 15pc;
+    box-shadow: 0pc 0pc 1.266pc .037pc var(--akkadianMain);
+    transition: transform 1s ease;
+}
+
+.prd-bg:hover {
+    transform: scale(1.03);
+}
+
+.prd-bg:hover .prd-bg-title {
+    text-decoration: underline;
+}
+.prd-info {
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+}
+
+
+.prd-bg-title {
+    color: #000;
+}
+
+.prd-bg-dsc {
+    color: #777;
+}
+
+
+@media only screen and (min-width:996px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .prd-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .prd-form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #prdsearchIcon {
+        position: absolute;
+        top: 38%;
+        left: 80%;
+    
+    }
+}
+
+
+@media only screen and (max-width:996px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .prd-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .prd-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #prdsearchIcon {
+        position: absolute;
+        top: 38%;
+        left: 80%;
+    
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .prd-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .prd-form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #prdsearchIcon {
+        position: absolute;
+        top: 38%;
+        left: 80%;
+    
+    }
+}
+
+@media only screen and (max-width:667px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    
+    .prd-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #prdsearchIcon {
+        position: absolute;
+        top: 38%;
+        left: 85%;
+    
+    }
+
+    .prd-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    
+    .prd-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #prdsearchIcon {
+        position: absolute;
+        top: 38%;
+        left: 85%;
+    
+    }
+
+    .prd-title {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width:375px) {
+    .container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    
+    .prd-form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #prdsearchIcon {
+        position: absolute;
+        top: 21.5%;
+        left: 75%;
+    
+    }
+
+    .prd-bg {
+        height: 10pc;
+        width: 16pc;
+    }
+
+    .prd-bg-dsc {
+        font-size: .8rem;
+    }
+}
+

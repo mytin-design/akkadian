@@ -1,0 +1,2620 @@
+/* light BACKGROUND-COLOR */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: inherit;
+}
+
+:root {
+
+    /* strong, masculine, clean */
+    --sblue: #5c5ba7;
+    --sgreen: #43a472;
+    --swhite: #f0f0f0;
+    --sblack: #000000;
+
+    /* theme 1 */
+    --hd-bkcolor: #eee;
+    --web-title: rgb(4, 4, 48);
+    --main-bordercolor: #777;
+    --main-white: #fff;
+    --main-black: #000;
+    --light-gray: #999;
+    --medium-gray: rgba(8, 6, 22, 0.548);
+    --dark-gray: #666;
+    --container-bkcolor: rgba(247, 247, 247, 0.548);
+    --abs-bkcolor: blue;
+    --tabitems-color: #eee;
+
+    /* theme 2 */
+    --tsbk-main: linear-gradient( rgb(4, 2, 19), rgb(110, 78, 110));
+    --tsmain-font: rgb(185, 182, 185);
+    --tshd-bkcolor: #eee;
+    --tsweb-title: rgb(214, 211, 211);
+    --tsmain-bordercolor: #777;
+    --tsmain-white: rgb(255, 255, 255);
+    --tsmain-black: rgba(8, 2, 24, 0.829);
+    --tslight-gray: rgb(214, 211, 211);
+    --tsmedium-gray: rgb(195, 194, 197);
+    --tsdark-gray: #666;
+    --tscontainer-bkcolor: rgb(8, 2, 24);
+    --tsabs-bkcolor: rgb(4, 4, 19);
+    --tstabitems-color: #eee;
+
+
+    --blue-40: #45a1ff;
+--blue-50: #0a84ff;
+--blue-60: #0060df;
+--blue-70: #003eaa;
+--blue-80: #002275;
+--grey-30: #d7d7db;
+--grey-60: #4a4a4f;
+--grey-90-a10: rgba(12, 12, 13, 0.1);
+--grey-90-a20: rgba(12, 12, 13, 0.2);
+--grey-90-a30: rgba(12, 12, 13, 0.3);
+--grey-90-a50: rgba(12, 12, 13, 0.5);
+--grey-90-a60: rgba(12, 12, 13, 0.6);
+--green-50: #30e60b;
+--green-60: #12bc00;
+--green-70: #058b00;
+--green-80: #006504;
+--green-90: #003706;
+--orange-50: #ff9400;
+--red-40: #ff4f5e;
+--red-50: #ff0039;
+--red-60: #d70022;
+--red-70: #a4000f;
+--red-80: #5a0002;
+--red-90: #3e0200;
+--yellow-50: #ffe900;
+--yellow-60: #d7b600;
+--yellow-60-a30: rgba(215, 182, 0, 0.3);
+--yellow-70: #a47f00;
+--yellow-80: #715100;
+--yellow-90: #3e2800;
+    --amber: #ffb405;
+    --azure: #09f;
+    --barney: #a514be;
+    --black: #000;
+    --carolina: #95b0ff;
+    --cranberry: #a0002d;
+    --dark: #161e2d;
+    --darker: #161e2d;
+    --darkmagenta: #dc5eba;
+    --darkorange: #e9665b;
+    --dark-maroon: #230005;
+    --dark-royal-blue: #000069;
+    --green: #44c751;
+    --indigo: #3c0082;
+    --lemon-green: #afe600;
+    --light: #707070;
+    --lightorange: #fa9738;
+    --light-gold: #ffe650;
+    --light-royal-blue: #3c46ff;
+    --magenta: #df49e7;
+    --new-blue: #31a5e0;
+    --newblue: #31a5e0;
+    --orange: #ec5f23;
+    --pale-mauve: #fff0fa;
+    --pinkish-orange: #ff6138;
+    --purpley: #7350ff;
+    --reddish-orange: #e65a28;
+    --sapphire: #2e27ad;
+    --soft-blue: #32343a;
+    --tangerine: #f90;
+    --textcolor: #b5bdc9;
+    --white: #fff;
+    --bright-light-blue: #32c8ff;
+    --akkadianMain: #d2e3e9; 
+    --akkadianText: rgb(20, 3, 51);
+    --akadianStrong: var(--main-black);
+ 
+}
+
+
+
+html {
+    
+    /*background-color: var(--tscontainer-bkcolor);
+    background: url(./images/akkad-intro-3.jpg) 50% no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+    background-origin: content-box;
+    */
+    background: var(--main-white);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Extra Large devices  - large laptops and desktops - 1200px and up */
+
+
+
+
+
+
+/*==================================== LANDING PAGE MEDIA QUERIES ==============================*/
+
+
+
+/* Large devices  - laptops/desktops - 992px and up */
+
+
+/* the styles below were above -992px. media query has been removed to reduce complications */
+    
+    .main-head {
+        height: fit-content;
+        background-color: var(--main-white);
+        /*background: url(./images/akkad-intro-3.jpg) 50% no-repeat;
+        background-attachment: scroll;
+        background-size: cover; 
+        background-origin: content-box;*/
+        
+    }
+    
+    .navbar {
+        margin: 0 auto;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 2pc;
+        align-items: center;
+        z-index: 1;
+        padding: 1pc;
+    
+    
+    }
+    
+    .nav > * {
+        color: var(--akadianStrong);
+        z-index: 1;
+    
+    }
+    
+    #web-hero {
+        position: absolute;
+        top: 0;
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+        display: none;
+    
+    }
+    
+    .x-title-bag {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+    }
+    
+    .x-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--akadianStrong);
+    }
+    .nav-main {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1;
+    
+    }
+    
+    .xl-nav {
+        position: relative;
+        color: var(--akadianStrong);
+    }
+    
+    .xl-nav:hover {
+        color: var(--akadianStrong);
+    }
+    
+    .xl-nav::before {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        height: .2pc;
+        left: 1pc;
+        margin: -1pc;
+        transform: scale(0);
+        transition: transform .3s ease;
+        background-color: var(--akadianStrong);
+    }
+    
+    .xl-nav:hover::before {
+        transform: scale(1);
+    }
+    
+    .log-bx {
+        display: flex;
+        align-items: center;
+        gap: 1pc;
+        width: 15%;
+
+    }
+
+    /* Theme btn */
+.themebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.25pc;
+    width: 1.25pc;
+    border-radius: 100%;
+    background-color: var(--akkadianMain);
+    border: none;
+    outline: none;
+    transition: .5s ease;
+}
+
+.themeTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#themeId:hover {
+    background-color: var(--grey-30);
+}
+    
+    .log-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: .1pc solid var(--light-gray);
+        border-radius: .2pc;
+        height: 2pc;
+        padding: .5pc;
+        color: var(--tsmain-black);
+    }
+
+    .log-link:hover {
+        border-color: var(--dark-maroon);
+    }
+
+    /* side nav */
+
+    /* hide side nav and button in large displays */
+    #sideNav, .mediaWhole {
+        display: none;
+    }
+
+    /* End nav styles */
+    
+    .body-head {
+        margin: 4pc auto;
+        width: 50%;
+        z-index: 1;
+    
+    }
+    
+    .main-h-t {
+        font-size: 3rem;
+        color: var(--akadianStrong); /* changes by theme */
+        font-weight: bolder;
+        padding: .3pc;
+        width: 70%;
+        z-index: 1;
+    
+    }
+    
+    .intro-sec {
+        color: var(--akadianStrong); /*changes by theme */
+        padding: 1pc;
+        display: flex;
+        flex-flow: column;
+        gap: .7pc;
+        z-index: 1;
+    
+    }
+    
+    .tm {
+        width: 70%;
+        padding: .5pc;
+        z-index: 1;
+    
+    }
+    
+    .intro-btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: .3pc;
+        width: 60%;
+        z-index: 1;
+    
+    }
+    .rdm-btn, .contact-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: .2pc;
+        width: 8pc;
+        height: 2.5pc;
+        background-color: var(--akadianStrong);
+        color: var(--tsmain-black);
+        border: none;
+        z-index: 1;
+    
+    }
+    
+    .contact-btn {
+        background-color: blue;
+        color: var(--main-white);
+    }
+    
+    .rdm-btn {
+        background-color: black; /* changes in theme 2 */
+        color: var(--tsmain-white); /* changes in theme 2 */
+        width: 10pc;
+        animation-name: borderEffect;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    
+    .rdm-btn:hover {
+        background-color: #222;
+    }
+
+    .contact-btn:hover {
+        background-color: rgba(0, 0, 255, 0.87);
+    }
+    
+    
+    
+    
+    
+    /* Main styles */
+
+    .container {
+        height: fit-content;
+        padding: .5pc;
+    }
+    /*
+    .container {
+        background-color: var(--tscontainer-bkcolor);
+    }
+    
+    */
+    
+    .central-serve {
+        height: fit-content;
+        padding: 1pc;
+    }
+    /* services and products section styles - tabs sections */
+    
+    .sp-wrap {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1pc;
+        margin: 0 auto;
+        width: 80%;
+    
+    }
+    
+    .s-tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        padding: .3pc;
+        border-radius: 1pc;
+        width: 10%;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    
+    
+    .tab-btns {
+        width: 60%;
+        height: 2pc;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .tabBtn {
+        color: var(--akadianStrong);
+        transition: color .3s ease;
+        position: relative;
+        cursor:default;
+    }
+    
+    .tabBtn::before {
+        content: "";
+        position: absolute;
+        display: block;
+        margin: -1pc;
+        left: 1pc;
+        bottom: 0;
+        width: 100%;
+        height: .1pc;
+        transform: scale(0);
+        transform-origin: bottom right;
+        background-color: var(--akadianStrong);
+        transition: transform .3s ease-out;
+    }
+    
+    .tabBtn:hover::before {
+        transform: scale(1.3);
+        transform-origin: bottom left;
+    
+    }
+    
+    .active, .tabBtn:hover {
+        font-weight: 600;
+    }
+    
+    #defaultOpen  {
+        color: var(--black);
+    }
+    
+    
+    .tabcontent {
+        display: flex;
+        padding: 1pc;
+        justify-content: center;
+        gap: 1pc;
+        align-items: center;
+        flex-flow: column;
+        text-align: center;
+        animation: fadeEffect 1s; /* fading effect takes 1 sec */
+    
+    }
+    
+    /*fade in tabs */
+    
+    /* Go from zero to full opacity */
+    
+    @keyframes fadeEffect {
+        from{opacity: 0;}
+        to {opacity: 1;}
+    }
+    
+    
+    .tab-items {
+        display: flex;
+        padding: 1pc;
+        justify-content: space-around;
+        gap: 1pc;
+        align-items: center;
+        height: 50vh;
+    
+    }
+
+    .sb-svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sb-svg, .sb-winfo {
+        height: 50%;
+    }
+    
+    .tab-title {
+        color: var(--akadianStrong); /* changes in second theme */
+    }
+    
+    /* tabcontents items boxes - the styles for each container are specific */
+    .wd-box, .wh-f, .sm-you  {
+        width: 15pc;
+        height: 15pc;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1pc;
+        padding: .5pc;
+        border-radius: .4pc;
+        
+        box-shadow: 0pc 0pc 0.766pc var(--akkadianMain);
+        
+        color: var(--akadianStrong); /* change in second theme */
+        background-color: var(--main-white);
+    }
+    
+    .wd-title, .wh-title, .sm-title {
+        font-weight: bold;
+    }
+    
+    /*Projects / Image carousel section styles */
+    .project-wrapper {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    
+    .pro-title {
+        color: #555;
+    }
+    
+    .slider {
+        max-width: 1000px;
+        position: relative;
+        margin: 2pc auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* hide the images by default */
+    
+    .pcard {
+        width: 100%;
+        display: none;
+    }
+    
+    /* Next and prev btns */
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: var(--akadianStrong); /* change in second theme */
+        font-weight: bold;
+        font-size: 38px;
+        transition: .6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    
+    }
+    
+    .prev {
+        left: -5pc;
+    }
+    /* Position the "next" button to the right*/
+    .next {
+        right: -4pc;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: var(--tsmedium-gray); /* change in second theme */
+    }
+    
+    /* caption text */
+    .caption {
+        color: rgb(29, 5, 29);
+        font-size: 2pc;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 9px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(173, 169, 169, 0.445);
+    }
+    
+    
+    /* Number text (1/3) */
+    
+    .img-num {
+        color: #f2f2f2;
+        background-color: #000;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    
+    .pimg {
+        width: 100%;
+        height: 500px;
+    }
+    /* dots/bullets/ indicators */
+    
+    .ind {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: var(--tsmedium-gray); /* change in second theme */
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color .6s ease;
+    }
+    
+    .active, .ind:hover {
+        background-color: #201313;
+    }
+    
+    /*fading animation - optional */
+    
+    .pcard {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .7;
+        }
+    
+        to {
+            opacity: 1;
+        }
+    }
+    /* End project styles */
+    
+    /* start stats banner styles */
+    
+    .stats-banr {
+        height: 40vh;
+        background-color: var(--blue-40);
+        color: var(--main-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7pc;
+    }
+    
+    .sb > * {
+        color: var(--main-white);
+    }
+    
+    
+    
+    .sb {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: .5pc;
+        text-align: center;
+    }
+    
+    .stats {
+        font-size: 3rem;
+    }
+    
+    
+    /* End stats section *? */
+    
+    
+    
+    /* About Us section */
+    
+    .ab-s {
+        display: flex;
+        height: fit-content;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1pc;
+        /*background-color: var(--tsabs-bkcolor);*/
+        color: var(--akadianStrong);
+        padding: .5pc;
+    }
+    
+    .ab-img {
+        width: 50%;
+        padding: 1pc;
+    
+    }
+    
+    #ab_img {
+        height: 25pc;
+        width: 38pc;
+    }
+    
+    .ab-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1pc;
+        color: var(--akadianStrong);
+        width: 50%;
+        padding: 1pc;
+    
+    
+    }
+    
+    .ab-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+        padding: .3pc;
+        border-radius: 1pc;
+        width: 20%;
+        font-size: .7rem;
+    }
+    
+    .ab_stitle {
+        font-size: 1rem;
+        
+
+    }
+    
+    .ab-text, .ab-list {
+        color: var(--akadianStrong);
+        font-size: .9rem;
+    }
+    
+    
+    
+    .ab-list {
+        margin-left: 2pc;
+    }
+    
+    .abs-btns {
+        display: flex;
+        gap: 2pc;
+        width: 70%;
+    }
+    .abs-bk {
+        background-color: var(--main-black);
+        color: var(--tslight-gray);
+        border: .1pc solid var(--tsmain-white); /* changes based on the theme */
+    }
+
+    .abs-bk:hover {
+        background-color: #222;
+    }
+
+    
+    .abs-wbk {
+        background-color: blue; /* change in second theme */
+        color: var(--tsmain-white); /* change in second theme */
+    }
+
+    .abs-wbk:hover {
+        background-color: rgba(0, 0, 255, 0.87);
+    }
+    
+    /* testimonial styles */
+
+.tiles-wrapper {
+    max-width: 1000px;
+    position: relative;
+    margin:  auto;
+}
+
+.tile {
+    display: none;
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color:  var(--akadianStrong);
+    font-weight: bold;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 0px 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0pc;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0pc;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(185, 182, 182, 0.226);
+}
+
+.caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.tile-num {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.ind {
+    cursor: pointer;
+    height: 5px;
+    width: 45px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color .6s ease;
+    display: none;
+}
+
+.active, .ind:hover {
+    background-color: #000;
+}
+
+.tile {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Testimony tiles styles - feedback section */
+
+
+.testimonial-container {
+    background-color: var(--main-white);
+    color: var(--akadianStrong);
+    margin: 2pc;
+}
+.test-tile {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    gap: 1pc;
+    padding:1pc;
+    box-shadow: 0pc 0pc 0.766pc var(--akkadianMain);
+
+}
+
+.test-bg {
+    
+    border-radius: 5pc;
+    width: 50%;
+    height: 70%;
+}
+
+
+
+.test {
+    display: flex;
+    align-items: flex-start;
+    padding:1pc;
+}
+
+
+.test-img {
+    width: 5pc;
+    height: 5pc;
+    margin: 1pc;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.quote {
+    font-size: 39px;
+    color: magenta;
+
+}
+
+.test-title {
+    margin: 1pc;
+    font-size: 2rem;
+}
+
+
+/* CALL BACK FORM TEMPLATE STYLES */
+
+.call-back-main {
+    background-color: var(--blue-70);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+    padding: 3pc;
+}
+
+.call-back-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-back-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.call-back-form {
+    display: flex;
+    gap: 1pc;
+    height: fit-content;
+}
+
+.form-call {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+
+.form-call-y {
+    justify-items: flex-start;
+}
+.call-back-input {
+    height: 2.5pc;
+    width: 20pc;
+    border: none;
+    padding: .2pc .2pc;
+}
+
+.cb-submit {
+    width: 6pc;
+    background-color: rgb(6, 153, 80);
+    color: white;
+    font-weight: 800;
+    border: none;
+}
+
+
+
+    
+    /* footer styles - suatomotives template*/
+    
+    
+    .foo-link-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: fit-content;
+        padding: 1pc;
+    }
+    
+    .address-box {
+        display: flex;
+        flex-flow: column;
+        gap: .5pc;
+    }
+    .x-logo-link {
+        font-size: 3rem;
+    }
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        gap: 1pc;
+        width: 10pc;
+        padding: .5pc;
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+        color: var(--akadianStrong); /* change in second theme */
+    
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        color: var(--grey-60);
+    }
+    
+    .sec-link:hover {
+        color: var(--akadianStrong);
+    }
+    
+    
+    
+    .address-box-img {
+        width: 20pc;
+        height: 5pc;
+    }
+    
+    .foo-loc-tag {
+        margin-top: 1pc;
+    }
+    
+    .ad-tag {
+        display: flex;
+        color: var(--dark-royal-blue);
+    }
+    
+    address {
+        padding-left: 1pc;
+        text-decoration: inherit;
+        color: var(--akadianStrong);
+    }
+    
+    
+    .crights-box  {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        color: var(--akadianStrong);
+    }
+    
+
+    
+
+    
+/* four media break points - 
+1. @996px
+2. @750px
+3. @500px
+4  @375px
+
+--additional breakpoints have been added - check appropriateness
+
+*/
+
+@media only screen and (max-width: 1150px) {
+
+    .body-head {
+        width: 60%;
+    }
+
+    .intro-btns {
+        width: 70%;
+    }
+    
+    
+    }
+
+
+
+@media only screen and (max-width: 996px) {
+
+/* start header */
+    /* revisit the video height - */
+    #web-hero {
+        height: 70%;
+    }
+
+    /* consider using a sidenav panel for lower devices */
+    .navbar {
+        width: 100%;
+    }
+
+    .x-title-bag {
+        width: 100%;
+    }
+
+    .log-bx {
+        width: 20%;
+    }
+
+    #sideNav, #openNavbtn {
+        display: none;
+    }
+
+    .body-head {
+        width: 70%;
+    }
+
+    .intro-btns {
+        width: 50%;
+    }
+
+    /* start services */
+
+    .sp-wrap {
+        width: 100%;
+    }
+
+    .s-tag {
+        width: 15%;
+    }
+
+    .wd-box, .wh-f, .sm-you {
+        height: 12pc;
+        width: 12pc;
+    }
+
+    /* start project*/
+    .pimg {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* start stats banner */
+    .stats-banr {
+        height: fit-content;
+        padding: 3pc 0pc 3pc 0pc;
+    }
+    .stats {
+        font-size: 1.25rem;
+    }
+
+    /* start about us */
+    .ab-s {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .ab-img {
+        width: auto;
+    }
+
+    .ab-info {
+        width: 100%;
+    }
+
+    #ab_img {
+        height: 15pc;
+        width: 25pc;
+    }
+    /* start call form */
+    .call-back-main {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+
+
+.foo {
+    height: fit-content;
+}
+
+
+    .foo-link-wrap {
+
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: inherit;
+        color: #555;
+
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        color: #555;
+        
+    }
+    
+
+    .crights-box {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width:920px) {
+    .body-head {
+        width: 70%;
+    }
+
+    .intro-btns {
+        width: 70%;
+    }
+}
+
+/* Styles for devices 750 and below -model: Iphone Se */
+/* consider introducing humburger menus for devices below 750px */
+
+
+@media only screen and (max-width: 800px) {
+    /* start header */
+    /* revisit the video height - */
+    #web-hero {
+        height: 70%;
+    }
+
+    /* consider using a sidenav panel for lower devices */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .x-title-bag {
+        display: flex;
+        justify-content: start;
+
+    }
+
+
+    .nav-main {
+        display: none;
+    }
+
+    #themeId, .log-bx {
+        display: none;
+    }
+
+    /* start sidepanel */
+    #sideNav {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0; /* change width with js */
+        background-color: rgba(0, 0, 0, 0.812);
+        overflow: hidden;
+        padding-top: 3pc;
+        height: 100vh;
+        z-index: 3;
+    }
+
+    .sidenav a {
+        color: #eee;
+        padding: .8pc .8pc .8pc 3.2pc;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: white;
+    }
+
+    #themerId {
+        margin: .8pc .8pc .8pc 3.2pc;
+    }
+
+    .log-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5pc;
+        margin: .8pc .8pc .8pc 3.2pc;
+
+    }
+
+    .xl-nav::before {
+        content: "";
+        position: absolute;
+        display: none;
+        bottom: 0;
+        width: 70%;
+        height: .2pc;
+        left: 1pc;
+        margin: -1pc;
+        transform: scale(0);
+        transition: transform .3s ease;
+        background-color: var(--tsmain-white);
+    }
+    
+    .xl-nav:hover::before {
+        transform: scale(1);
+    }
+
+    .closenav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 2.5pc;
+        cursor: pointer;
+        color: #eee;
+    }
+
+    #openNavbtn {
+        display: inline-block;
+        background-color: var(--black);
+        color: var(--tsmain-white);
+        font-size: 1.5pc;
+        padding: .5pc .8pc;
+        border: none;
+        
+    }
+
+    .openPanel:hover {
+        background-color: #222;
+    }
+
+
+
+
+
+    .body-head {
+        width: 100%;
+    }
+    .intro-btns {
+        width: 50%;
+    }
+
+    /* start services */
+
+    .sp-wrap {
+        width: 100%;
+    }
+
+    .s-tag {
+        width: 25%;
+    }
+
+    .wd-box, .wh-f, .sm-you {
+        height: 12pc;
+        width: 12pc;
+    }
+
+    svg use #img_2 {
+        
+        fill: #ff0000;
+    }
+
+    /* start project*/
+    .pimg {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* start stats banner */
+    .stats-banr {
+        height: fit-content;
+        padding: 3pc 1pc 3pc 1pc;
+    }
+    .stats {
+        font-size: 1rem;
+    }
+
+
+    /* start about us */
+    .ab-s {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .ab-img {
+        width: auto;
+    }
+
+    .ab-info {
+        width: 100%;
+    }
+
+    #ab_img {
+        height: 15pc;
+        width: 25pc;
+    }
+
+    /* start testimony */
+    .test-tile {
+        display: flex;
+        flex-direction: column;
+    }
+    /* start call form */
+    .call-back-main {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .call-back-input {
+        width: 15pc;
+    }
+
+
+.foo {
+    height: fit-content;
+}
+
+
+    .foo-link-wrap {
+
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: inherit;
+
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        
+    }
+    
+
+    .crights-box {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 680px) {
+    
+    /* start header */
+
+    .body-head {
+        width: 100%;
+    }
+    
+    .intro-btns {
+        width: 70%;
+    }
+/* start services */
+    .central-serve {
+        height: fit-content;
+    }
+    .s-tag {
+        width: 30%;
+    }
+
+    .sp-wrap {
+        width: 100%;
+    }
+    .tab-btns {
+        width: 100%;
+        font-size: 12.5px;
+    }
+
+
+    .tab-items {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+/* something is wrong here */
+    /* start templates */
+    .project-wrapper {
+        height: fit-content;
+    }
+
+    .pimg {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* start about us */
+
+    .ab-s {
+        height: fit-content;
+    }
+    
+    .ab-title {
+        width: 40%;
+    }
+
+    .ab-s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ab_img {
+        height: 8pc;
+        width: 13pc;
+    }
+    .ab-info {
+        width: 100%;
+    }
+
+    .abs-btns {
+        display: flex;
+        gap: .5pc;
+        width: 100%;
+    }
+
+
+        /* extra small devices e.g phones 600px and down */
+
+
+    /* start stats banner styles */
+
+.stats-banr {
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+    text-align: center;
+}
+
+.sb > * {
+    font-size: large;
+}
+
+
+/* start testimonial section */
+
+
+.testimonial-container {
+    height: fit-content;
+}
+.test-tile {
+    display: flex;
+    flex-flow: column;
+    height: fit-content;
+    align-items: center;
+    gap: 1pc;
+    padding:1pc;
+}
+
+.test-bg {
+    border: none;
+    width: 100%;
+    height: fit-content;
+}
+
+.border-color {
+    border: none;
+
+}
+
+.test {
+    display: flex;
+    flex-flow: column;
+    padding:1pc;
+}
+
+
+.test-img {
+    width: 5pc;
+    height: 5pc;
+    margin: 1pc;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.quote {
+    font-size: 39px;
+
+}
+
+.test-title {
+    margin: 1pc;
+    font-size: 2rem;
+}
+
+
+    
+/* call back form : styles for extra small devices - phones -  600px and below */
+
+
+.call-back-main {
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+    padding: 3pc;
+}
+
+.call-back-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-back-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* kuna kashida hapa - what area does the form cover? */
+/* solved by using height: fit-content; */
+
+/* I suggest using height: fit-content; or height: auto; - it will solve alot of problems for you */
+.call-back-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    height: fit-content;
+}
+
+.form-call {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+
+
+
+.cb-submit {
+    width: 6pc;
+
+}
+
+
+
+
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+        
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        
+    }
+    .foo {
+        height: fit-content;
+        
+    }
+    .foo-link-wrap {
+        height: fit-content;
+
+    }
+
+    .crights-box {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 550px) {
+    .body-head {
+        width: 100%;
+    }
+
+    .intro-btns {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .body-head {
+        width: 100%;
+    }
+
+    .intro-btns {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    /* start header */
+    .navbar {
+        width: 100%;
+    }
+    #web-hero {
+        height: 50%;
+    }
+    .x-title-bag {
+        width: 50%;
+
+    }
+    .nav-main {
+        display: none;
+    }
+
+    .log-bx {
+        width: 50%;
+    }
+
+    
+    .body-head {
+        width: 100%;
+    }
+
+    .main-h-t {
+        font-size: 1.5rem;
+    }
+    .tm {
+        width: 100%;
+    }
+    .intro-sec {
+        width: 100%;
+    }
+    .intro-btns {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    
+/* start services */
+    .central-serve {
+        height: fit-content;
+    }
+    .s-tag {
+        width: 30%;
+    }
+
+    .sp-wrap {
+        width: 100%;
+    }
+    .tab-btns {
+        width: 100%;
+        font-size: 12.5px;
+    }
+
+
+    .tab-items {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+/* something is wrong here */
+    /* start templates */
+    .project-wrapper {
+        height: fit-content;
+    }
+
+    .pimg {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* start about us */
+
+    .ab-s {
+        height: fit-content;
+    }
+    
+    .ab-title {
+        width: 40%;
+    }
+
+    .ab-s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ab_img {
+        height: 8pc;
+        width: 13pc;
+    }
+    .ab-info {
+        width: 100%;
+    }
+
+    .abs-btns {
+        display: flex;
+        gap: .5pc;
+        width: 100%;
+    }
+
+
+        /* extra small devices e.g phones 600px and down */
+
+
+    /* start stats banner styles */
+
+.stats-banr {
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+    text-align: center;
+}
+
+.sb > * {
+    font-size: large;
+}
+
+
+/* start testimonial section */
+
+
+.testimonial-container {
+    height: fit-content;
+}
+.test-tile {
+    display: flex;
+    flex-flow: column;
+    height: fit-content;
+    align-items: center;
+    gap: 1pc;
+    padding:1pc;
+}
+
+.test-bg {
+    border: none;
+    width: 100%;
+    height: fit-content;
+}
+
+.border-color {
+    border: none;
+
+}
+
+.test {
+    display: flex;
+    flex-flow: column;
+    padding:1pc;
+}
+
+
+.test-img {
+    width: 5pc;
+    height: 5pc;
+    margin: 1pc;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.quote {
+    font-size: 39px;
+
+}
+
+.test-title {
+    margin: 1pc;
+    font-size: 2rem;
+}
+
+
+    
+/* call back form : styles for extra small devices - phones -  600px and below */
+
+
+.call-back-main {
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+    padding: 3pc;
+}
+
+.call-back-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-back-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* kuna kashida hapa - what area does the form cover? */
+/* solved by using height: fit-content; */
+
+/* I suggest using height: fit-content; or height: auto; - it will solve alot of problems for you */
+.call-back-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    height: fit-content;
+}
+
+.form-call {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+
+
+
+.cb-submit {
+    width: 6pc;
+
+}
+
+
+
+
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+        
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        
+    }
+    .foo {
+        height: fit-content;
+        
+    }
+    .foo-link-wrap {
+        height: fit-content;
+
+    }
+
+    .crights-box {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    
+    /* start header */
+    .navbar {
+        width: 100%;
+    }
+    #web-hero {
+        height: 70%;
+    }
+    .x-title-bag {
+        width: 50%;
+
+    }
+    .nav-main {
+        display: none;
+    }
+
+    .log-bx {
+        width: 50%;
+    }
+
+    
+    .body-head {
+        width: 100%;
+    }
+
+    .tm {
+        width: 100%;
+    }
+    .intro-sec {
+        width: 100%;
+    }
+    .intro-btns {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .rdm-btn, .contact-btn {
+        width: 6.5pc;
+    }
+/* start services */
+    .central-serve {
+        height: fit-content;
+    }
+    .s-tag {
+        width: 30%;
+    }
+
+    .sp-wrap {
+        width: 100%;
+    }
+    .tab-btns {
+        width: 100%;
+        font-size: 12.5px;
+    }
+
+
+    .tab-items {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+/* something is wrong here */
+    /* start templates */
+    .project-wrapper {
+        height: fit-content;
+    }
+
+    .pimg {
+        width: 100%;
+        height: 200px;
+    }
+
+    /* start about us */
+
+    .ab-s {
+        height: fit-content;
+    }
+    
+    .ab-title {
+        width: 40%;
+    }
+
+    .ab-s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ab_img {
+        height: 8pc;
+        width: 13pc;
+    }
+    .ab-info {
+        width: 100%;
+    }
+
+    .abs-btns {
+        display: flex;
+        gap: .5pc;
+        width: 100%;
+    }
+
+
+        /* extra small devices e.g phones 600px and down */
+
+
+    /* start stats banner styles */
+
+.stats-banr {
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+    text-align: center;
+}
+
+.sb > * {
+    font-size: large;
+}
+
+
+/* start testimonial section */
+
+
+.testimonial-container {
+    height: fit-content;
+}
+.test-tile {
+    display: flex;
+    flex-flow: column;
+    height: fit-content;
+    align-items: center;
+    gap: 1pc;
+    padding:1pc;
+}
+
+.test-bg {
+    border: none;
+    width: 100%;
+    height: fit-content;
+}
+
+.border-color {
+    border: none;
+
+}
+
+.test {
+    display: flex;
+    flex-flow: column;
+    padding:1pc;
+}
+
+
+.test-img {
+    width: 5pc;
+    height: 5pc;
+    margin: 1pc;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.quote {
+    font-size: 39px;
+
+}
+
+.test-title {
+    margin: 1pc;
+    font-size: 2rem;
+}
+
+
+    
+/* call back form : styles for extra small devices - phones -  600px and below */
+
+
+.call-back-main {
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2pc;
+    padding: 3pc;
+}
+
+.call-back-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-back-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* kuna kashida hapa - what area does the form cover? */
+/* solved by using height: fit-content; */
+
+/* I suggest using height: fit-content; or height: auto; - it will solve alot of problems for you */
+.call-back-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    height: fit-content;
+}
+
+.form-call {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+}
+
+
+
+.cb-submit {
+    width: 6pc;
+
+}
+
+
+
+
+
+    .foo-link-wrap {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 1pc;
+        
+    }
+    
+    
+    .f-link {
+        display: flex;
+        flex-flow: column;
+        width: 13pc;
+        padding: .5pc;
+        margin: .5pc;
+        
+
+    }
+    
+    .foo-link-title {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .sec-link {
+        text-decoration: none;
+        
+    }
+    .foo {
+        height: fit-content;
+        
+    }
+    .foo-link-wrap {
+        height: fit-content;
+
+    }
+
+    .crights-box {
+        text-align: center;
+    }
+
+
+}
+
+/* ================================OTHER STYLES ========================================*/
+/* ================================404 PAGE STYLES ================*/
+
+
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+width: 40%;
+margin: 5pc auto;
+color: azure;
+}
+
+.pg-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.file-status {
+    margin-top: 2pc;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pg-options {
+    margin-left: 2pc;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    height: 2pc;
+    width: 7pc;
+}
+/* four media break points - 
+1. @996px
+2. @750px
+3. @500px
+4  @375px
+
+*/
+
+/* for screen sizes less than 996px */
+
+@media only screen and (max-width: 996px) {
+    .page-not-found {
+        width: 70%;
+    }
+}
+
+/* for screen sizes less than 600px */
+
+@media only screen and (max-width: 600px) {
+    .page-not-found {
+        width: 80%;
+    }
+}
+
+
+
+/* ======================= HELP STYLES ================*/
+
+
+
+
+
+/* ======================================COMMUNITY STYLES ===========================================--*/
+.help-title {
+    margin: 5pc 5pc;
+    font-size: 3rem;
+    color: var(--akkadianMain);
+}
+
+.community_settings {
+    border-radius: .4pc;
+    margin: 5pc auto;
+    width: 80%;
+    height: fit-content;
+    padding: 1pc;
+    display: flex;
+    gap: 1pc;
+    flex-flow: column;
+    background-color: var(--akkadianMain);
+    color: var(--akkadianText);
+}
+
+
+.news {
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+}
+
+.comm_nav_panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.trending_btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.chat_box-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.newTopic-signal {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.newTopic {
+    display: flex;
+    gap: 10px;
+}
+
+.sec_one, .sec_two, .sec_three {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 5px;
+    flex-basis: 400px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.discord {
+    border: 1px solid lightgray;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.your-contacts {
+    flex-flow: column;
+    display: flex;
+    gap: 10px;
+    width: 15%;
+}
+
+.cont-box {
+    height: 100px;
+    overflow-y: scroll;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+.coms-cont {
+    width: 8%;
+    position: fixed;
+    background-color: var(--akkadianText);
+    color: var(--akkadianMain);
+    padding: .1pc;
+
+}
+
+.favs {
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+}
+
+.chat-room {
+    border-radius: .8pc;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding: .5pc;
+
+}
+
+
+
+.chatroom-holder {
+    padding: .5pc;
+    height: fit-content;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(128, 125, 122, 0.158);
+}
+
+
+/* messages box styles */
+
+.current_message_contact {
+    display: flex;
+    justify-content: space-around;
+    padding: .5pc;
+    align-items: center;
+}
+
+.img_c_user {
+    height: 50px;
+    border-radius: 100%;
+}
+
+.message_actions {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.message-container {
+    padding: 10px;
+    background-color: rgba(151, 146, 146, 0.322);
+    border-radius: 9px;
+}
+
+.msg_box {
+    width: fit-content;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.message-box_2-1, .message-box_2-2, .message-box_2-3 {
+    float: right;
+}
+
+.chat-actions {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chatting-box {
+    width: 90%;
+    height: 35px;
+    background-color: #fff;
+}
+
+.userChatProf {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-chat_prof {
+    height: 25px;
+    border-radius: 100%;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    gap: 5px;
+}
+
+li:hover {
+    background-color: rgba(26, 14, 14, 0.171);
+    cursor: default;
+}
+
+/* display <=600px */
+
+@media only screen and (max-width: 600px) {
+
+    .help-title {
+        margin: 5pc 5pc;
+        width: 100%;
+        font-size: 3rem;
+        color: var(--akkadianMain);
+    }
+
+    .community_settings {
+        width: 100%;
+    }
+    .comm_nav_panel {
+        width: 100%;
+    }
+
+
+
+    .newTopic {
+        display: flex;
+        flex-flow: column;
+    }
+
+
+
+    /* chats styles */
+
+    .current_user_data {
+        display: none;
+    }
+
+    
+    .discord {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .your-contacts {
+        display: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .coms-cont {
+        width: 50%;
+    }
+
+    .msg_box {
+        margin: 5px;
+        font-size: .9rem;
+    }
+}
+
+

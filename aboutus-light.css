@@ -1,0 +1,113 @@
+/* About us Page styles*/
+.main-head {
+    height: fit-content;
+}
+
+.bthemebtn {
+    margin: .8pc .8pc .8pc 3.2pc;
+}
+
+
+.main-h-t {
+    width: 100%;
+}
+.ab-main{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: minmax(200px, auto);
+    color: inherit;
+}
+
+
+.ab-c {
+    height: 50pc;
+    width: 100%;
+}
+
+.ab-host {
+    margin-left: 2pc;
+    width: 70%;
+    color: inherit; /* All text will have this color */
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: inherit;
+    margin-top: 1pc;
+
+}
+
+.about-text {
+    margin-top: 1pc;
+    
+}
+
+.f-bg-img {
+    height: 10pc;
+    width: 10pc;
+}
+
+
+.off-box {
+    color: #333;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: .6pc;
+}
+
+
+.f-bg-info {
+    text-align: center;
+}
+
+
+@media only screen and (max-width:996px) {
+    .ab-main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .ab-info {
+        height: fit-content;
+    }
+
+    .ab-p {
+        height: fit-content;
+        
+    }
+
+    
+
+    .ab-p-box {
+        display: flex;
+        width: 90%;
+
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .ab-p-box {
+        overflow-x: scroll;
+        display: flex;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .ab-p-box {
+        overflow-x: scroll;
+        display: flex;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .ab-p-box {
+        overflow-x: scroll;
+        display: flex;
+        width: 90%;
+    }
+}

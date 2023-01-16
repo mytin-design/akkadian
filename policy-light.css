@@ -1,0 +1,90 @@
+/*Policy styles */
+* {
+    transition: .5s ease;
+}
+
+.main-head {
+    height: fit-content;
+}
+
+
+
+#web-hero {
+    display: none;
+}
+
+.bthemebtn {
+    margin: .8pc .8pc .8pc 3.2pc;
+}
+
+.policy-holder {
+    color: white;
+    width: 70%;
+    margin-left: 2pc;
+}
+
+.policy-card {
+    padding: 2pc;
+    color: black;
+}
+.policy-title {
+    font-size: 2rem;
+}
+
+.policy-para {
+    text-indent: 4pc;
+}
+
+.policy {
+    border-left: 2pc solid rgb(7, 90, 122);
+}
+.skyblue {
+    color: rgb(7, 90, 122);
+}
+
+.procedures {
+    border-left: 2pc solid green;
+
+}
+.green {
+    color: green;
+}
+
+.process {
+    border-left: 2pc solid gold;
+
+}
+
+.goldenrod {
+    color: gold;
+}
+
+.workInstructions {
+    border-left: 2pc solid red;
+
+}
+
+.red {
+    color: red;
+}
+
+
+@media only screen and (max-width: 996px) {
+    .main-head {
+        height: fit-content;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .main-head {
+        height: fit-content;
+    }
+
+
+    .policy-card, .policy-text {
+        width: 100%;
+        border: .1pc solid transparent;
+    }
+}

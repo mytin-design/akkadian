@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(236, 236, 240);
+
+    
+    display: flex;
+}
+/* HTML Markup borrowed from landing page */
+
+.body-head {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4pc;
+    height: 100vh;
+    /*
+    background: url(./images/akkad-intro-3.jpg) 50% no-repeat;
+    background-attachment: scroll;
+    background-size: cover; 
+    background-origin: content-box;
+    */
+    background: var(--tsmain-white);
+    color: var(--akaddianStrong);
+
+
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    object-fit: fill;
+    height: 100%;
+    width: 70%;
+    display: none;
+}
+
+.home-back {
+    color: var(--akaddianStrong);
+    font-weight: 700;
+    font-size: 4rem;
+    z-index: 11;
+
+}
+
+.main-h-t {
+    font-size: 3rem;
+    color: var(--tsmain-white);
+    font-weight: bolder;
+    padding: .3pc;
+    width: 70%;
+}
+
+.intro-sec {
+    color: var(--tsmain-white);
+    padding: 1pc;
+    display: flex;
+    flex-flow: column;
+    gap: .7pc;
+    padding-left: 3pc;
+    z-index: 11;
+
+}
+
+.tm {
+    width: 70%;
+    padding: .5pc;
+}
+
+.intro-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    padding: .3pc;
+}
+.rdm-btn, .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .2pc;
+    width: 8pc;
+    height: 2.5pc;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.contact-btn {
+    background-color: blue;
+    color: white;
+}
+
+.rdm-btn {
+    background-color: black; /* changes in theme 2 */
+    color: white; /* changes in theme 2 */
+    width: 10pc;
+    border: .1pc solid white;/* changes with theme */
+    
+}
+
+
+.wrapper {
+    margin: 5.5pc 0pc 0pc 4pc;
+    background-color: rgba(255, 255, 255, 0.966);
+    height: 30pc;
+    width: 20pc;
+    border-radius: .2pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5pc;
+
+}
+
+a {
+    text-decoration: none;
+}
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1pc;
+    width: 100%;
+    padding: 0pc 1pc 0pc 1pc;
+}
+
+h1 {
+    font-size: 1pc;
+    padding-left: .5pc;
+}
+
+
+.title-box {
+    display: flex;
+    align-items: center;
+}
+
+.acc {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+.title-img {
+    width: 1.5pc;
+    height: 1.5pc;
+    border-radius: 100%;
+}
+
+
+h2 {
+    font-size: 2.5pc;
+}
+
+
+.signinBox {
+    width: 85%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+}
+
+.g-s {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3pc;
+
+}
+
+.g-b {
+    height: 2.5pc;
+    width: 70%;
+    border-radius: .2pc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+    background-color: blue;
+    color: white;
+}
+
+.s-b {
+    padding: .5pc;
+    background-color: black;
+    border-radius: .2pc;
+}
+.g-img, .s-b-c {
+    width: 1pc;
+    height: 1pc;
+    border-radius: 100%;
+}
+
+form {
+    width: 100%;
+    padding: 1pc;
+    font-size: .8pc;
+    display: flex;
+    flex-flow: column;
+    gap: .5pc;
+}
+
+.c {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: .3pc;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 2.5pc;
+    width: 90%;
+    border-radius: .2pc;
+    border: none;
+}
+
+input[placeholder="Username or Email"], input[placeholder="Password"] {
+    padding-left: .5pc;
+}
+
+
+#s-btn {
+    width: 40%;
+    height: 2.5pc;
+    border-radius: .2pc;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+
+
+@media only screen and (max-width: 996px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-head {
+        display: none;
+    }
+    
+    .wrapper {
+        margin: 5pc auto;
+        
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .body-head {
+        display: none;
+    }
+    
+    .wrapper {
+        margin: 5pc auto;
+        
+    }
+}

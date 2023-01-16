@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Services: Web Design | Web Hosting | Web Maintenance and much more!</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="denismytin@gmail.com">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <meta name="keywords" content="Nerd Hosting, Techie, Geek, Shared hosting, Nested Hosting, Administer Package, Self package, machine package">
+        <meta name="description" content="Services: Web Design | Web Hosting | Web Maintenance and much more!">
+        <meta http-equiv="X-UA-Compatible" content="IE-7">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="keywords" content="services, web hosting, web design, server maintenance">
+        <meta property="og:description" content="Services: Web Design | Web Hosting | Web Maintenance and much more!">
+        <meta property="og:title" content="Our services">
+        <meta property="og:image" content="https://www.example.com/images">
+        <meta property="og:image-width" content="650">
+        <meta property="og:image-height" content="350">
+        <meta property="og:url" content="https://www.akkadian.com">
+        <base href="">
+        <link rel="icon" href="./images/myLogo.png" type="image/png" sizes="32x32">
+        <link rel="apple-touch-icon" href="./images/myLogo.png" />
+        <meta name="msapplication-TileImage" content="./images/myLogo.png" />
+     
+
+
+        <!--The current styles are css only-->
+        
+        <!--
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        -->
+
+        <link class="serve-bstyles" rel="stylesheet" href="blog-dark.css">
+        <link class="serve-mstyles" rel="stylesheet" href="styles-dark.css">
+        <link class="serve-sstyles" rel="stylesheet" href="services-dark.css">
+
+
+    </head>
+    <body>
+        <nav class="nav-wrapper">
+          <!--SidePanel Navigation-->
+          <div id="sidePanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <!--
+              <a href="./blog.html">Technology</a>
+            <a href="./eng.html">Engineering</a>
+            <a href="./econ.html">Commerce</a>
+            <a href="./404.html">Politics</a>
+            <a href="./404.html">Lifestyle</a>
+            -->
+            <a href="./services.html">Services</a>
+            <a href="./products.html">Products</a>
+            <a href="./team.html">Our Team</a>
+            <a href="./careers.html">Careers</a>
+            <a href="./aboutus.html">About Us</a>
+            <button class="themebtn bthemebtn"  id="sthemerId" onclick="turnsLight()">
+              <abbr class="themeTitle" title="Change Theme">
+                  <?xml version="1.0" encoding="utf-8"?>
+              <svg title="Change Theme" id="nightTheme" width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <image width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAABK9JREFUeJztne1x2zgQQF9u7n/UQdBBdBWEHZw6CEtwB2EHSQdmB/ZVYF4FUioQU4HUge8HpZFOSYwltEusKLwZjDWmzSdi8UlCEBQKhUKhUCgU9HmX+w0YsQTeAxUQDomL10f6Qzp/3QE/zn4/GXMJyBL4xBCAClgonXfPEJwO+IcMAbolAvAF2AKvE6XtwRnMr+6G+Ay8MF0QfpeeDu/lbvnMtLVBml4sL9ojK3wG4jw1VhfviYCPpkmStjZZ4Icv5M/ksUmFP7VOpERg6CyXCuf6Dmw4zSvg/3OOI9WZOwAPDHOYsa7ZsQJ2pJfQHvh2OE/qPOQx0b1K9LmlJi0j9kDLqZSnsgDWif76Src7UkrlnmFkozEjX5JWM1tmOEFMCUaD3q2RlGC0zDAQMD4YHboZMTYYG2W/K8YEw6KdHhuMRtnvippxpVJjCHzOmGDsuX7A4JoV8mA8o9dXHFkgvw2zMfC7IiAvma3Re3gS+jtmHgyQj/NbI3+T2e+KhryZUWX2uyIg7zOskPQbG0O/K17I24E2Av/e0O8Kyahqj/7Q9kgQ+F+Z+dD2HElTURv6JbXzwdDvihrZ8NKKKrPfHZLaEQz9ktpRGfpdURPPjMbQHwT+1tDvjljptB7VtAJ/MPS7IuC/dlj63dGQt3bUEb913+WOWGfeGvufI37LOwLuWJJ3ZLMQ+Ge3QuQtHng7M3pjfx3x7439V/OH8vmqyHHr5iJW+ltjvztiD6Csm4tY/3VXzZWk/7AcXUn6j2DoV0GzyYpl9nds2/DYHeMsnxkci2ZAqshx6wdAMX9n7FdBMyAhcrxXdHn0qzBlQDpFl0e/CtrD3sKVaAbkQ+R4r+gqCIgNOXP7b2IRg+ZODrFMt941IrdfhdKHOOOeAnITTZZmQH5EjgdF16/4N3Lcau2XKpoB6SPHg6JrttxTk3UTTFlDKkWXR78Kc2qycvvdUfH2xGyd2b819rujPKByyJ68j1D7zP6r0R5ldZHjlbLvkthDMGu/O2LLgKzb8Tri3xn73VEWyjmk5+0MaY39ZSnpBQ3xZqMstp6QQDxDmhn7XdKRt5a0An8w9Lujxn8taQ39LunJ25Z3An9l6HdHTTxDXgz9VWa/S3rimVIb+juB/242DgDZ1ho7ytYak9IRz5A1eTefsR71uSIgK6VPhu+hF/itn9e4okEWlEcjf5XZ75INeTOlyex3RyD+AMs6U2I3Hqfo01wxZpvYJ2y2ie2F/rsJSo08KGtsNlKW1tQddzIkbpEHZYfNVuPSoLwyfOPP7GmRZ8grw22OoOgfG5S1st8lLeOCciytml9XMSYoxwFHUPK7pGV8UHboBSYlKLMPTM34DDkG5hH4+0r/Avk8ybp/c8OKtJJ6TFvgK0NwUmtOm+hWW8ni7XN3gWHy9lHhXBt+/tq8X22v8enMHUh7krkB/kr4v5uhIb2m5EqzJyC7de8h9RYZ4JUV8tsduVJjdO2uqfEZmLtbCXlJjY+m7JkZD3lTCAxNRc90QegPzmB6ZTNgybB65Jnr5jKXac+pJoQpLsTbPESLJcPksOI0v+Dw88PF355vPdhzmrccXxcKhUKhUCgUbp7/ADHCYO4TBQwjAAAAAElFTkSuQmCC" id="img_1" />
+                </defs>
+                <g>
+                  <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.2 0.2)" />
+                </g>
+              </svg>
+              </abbr>
+          </button>
+
+          <!--hide in displays > 500-->
+          <button  id="subs-btn" class="red-cr whide">Get Website</button>
+              <a href="./login.html" class="signin-btn whide">Sign In</a>
+
+
+          </div>
+
+          <button class="openBtn" onclick="openNav()">&#9776</button>
+
+
+
+
+          <p  class="h-btn-box logo flex">
+            
+<a href="./index.html" class="b-home-btn">Akkadian</a>
+</p>
+            
+
+
+
+          <div class="blog-x flex">
+              <!--
+                <img src="./images/Denis-Profile.JPG" alt="User Profile" class="nav-img">
+              
+
+<p class="blog-title">Denis King's Blog</p>
+              -->
+              <!--Updated Version: container for subscribe btn, sign in and search icon-->
+              <button id="subs-btn" class="red-cr">Get Website</button>
+              <a href="./login.html" class="signin-btn">Sign In</a>
+              <form action="" id="search" method="get">
+                <!--Hide search and display when icon is clicked-->
+                <input type="search" id="searchMain" placeholder="Search">
+              </form>
+
+            </div>
+        </nav>
+        <main class="container">
+            <!--Header box - with three items: A breadcrumb, title, and search bar-->
+            <div class="hd-bx">
+                <div class="nav-crumb">
+                    <ul class="breadcrumb">
+                        <li><a href="./index.html" class="bc-nav">Home</a></li>
+                        <li><a href="./services.html" class="bc-nav">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="prd-title-bx">
+                    <h1 class="prd-title">Services</h1>
+                </div>
+
+                <form action="#" class="prd-form">
+                    <input type="search" name="Searched Item" value="" id="prd_form" placeholder="Find help...">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <svg style="display: none;" id="prdsearchIcon" width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <path d="M0 0L30 0L30 30L0 30L0 0Z" id="path_1" />
+                        <clipPath id="mask_1">
+                          <use xlink:href="#path_1" />
+                        </clipPath>
+                      </defs>
+                      <g id="Icon">
+                        <path d="M0 0L30 0L30 30L0 30L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+                        <g clip-path="url(#mask_1)">
+                          <path d="M12.6 1.80002C6.97265 1.80002 2.4 6.37267 2.4 12C2.4 17.6274 6.97265 22.2 12.6 22.2C14.8266 22.2 16.8844 21.4828 18.5625 20.2688L26.4562 28.1438L28.1437 26.4563L20.3438 18.6375C21.8766 16.8516 22.8 14.5336 22.8 12C22.8 6.37267 18.2273 1.80002 12.6 1.80002L12.6 1.80002ZM12.6 3C17.5781 3 21.6 7.02188 21.6 12C21.6 16.9781 17.5781 21 12.6 21C7.62187 21 3.6 16.9781 3.6 12C3.6 7.02188 7.62187 3 12.6 3L12.6 3Z" id="Shape" fill="#000000" fill-rule="evenodd" stroke="none" />
+                        </g>
+                      </g>
+                    </svg>
+                </form>
+            </div>
+
+            <!--Products wrapper-->
+
+            <div class="prd-wrapper">
+                <!--All product bags have the format and layout of the initial box - so you can duplicate as many as you want-->
+                <a href="#" class="prd-bg">
+
+                    <div class="icon-bg">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg id="icon" width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                          <defs>
+                            <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_2" />
+                          </defs>
+                          <use xlink:href="#img_2" fill="#FFFFFF" stroke="none" transform="scale(0.5208333 0.5208333)" />
+                        </svg>
+                    </div>
+                    <div class="prd-info" id="prd-info-id">
+                        <h4 class="prd-bg-title">Techie</h4>
+                        <p class="prd-bg-dsc">Techie Plan has 100GB Web space, <br> Unlimited bandwith, <br>5 email accounts, <br>1 hosted domain and 4 parked domains.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="prd-bg">
+                    <div class="icon-bg">
+                        <?xml version="1.0" encoding="utf-8"?>
+<svg width="50px" height="50px" viewBox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAAgZJREFUeJzt2b9KXEEUx/HfLK6CBLXwX4LvYGWwsExhGQTB0s7aJi8h5AVsrGRBCIFYpEgXQfA5FoNmURKwyYKTLsVicXaYm3PnzvdTz86eOz/2sueMBAAAAAAAAAAAAHRZmGbx/n1cH491qqBtScsN1VSqkaKue7M6+rQSflg/ZA5g72d8/fxHNwraSKuvElHD/ittXiyGB8vynnnfsU44fIOgjfGTPlqX2wOQ3qVVVKVd60JzAJLWEgqplfmspgkADSAAZwTgjACcEYCzmdwbXp0N9Ot+lHvbVlhcXdbO4UHWPbP/Arp6+FIzz8YryBkBOCMAZ9kDWFjt7pS6iWczj6Pf38aY/ds77PObYDpbXkHOCMAZATgjAGcE4KzKWZBlpvP9bKDfE8/BLCgTS42Th2/93LR4BTmrshO21PjSGjrhgtAJF4IAnBGAsyr6gJT/7/QBGaXURB9QiSr6gJSa6AMKRx9QCAJwRgDOqugDJnEf4Iz7APxTRR8wifuACtAHFIIAnBGAMwJwRgDOCMAZATjLPgtqm5dmOqmKmAW1Ta7Dl5gFdVLnA8g5v2EWVBBmQYWYJoC7xqroHvNZmQMI0re0Wqr01brQHMBcXx8UNUyrpyJRw/l5HVuXmwMYrITb3qzeKuqLpPZf/P5/I0Vd9vvaOl8Kj97FAAAAAAAAAAAAAO3wF7f4n348LKEMAAAAAElFTkSuQmCC" id="img_3" />
+  </defs>
+  <use xlink:href="#img_3" fill="#FFFFFF" stroke="none" />
+</svg>
+                    </div>
+                    <div class="prd-info" id="prd-info-id">
+                        <h4 class="prd-bg-title">Nerd</h4>
+                        <p class="prd-bg-dsc">Nerd Plan has 400GB Web space, <br>Unlimited bandwith, <br>7 email accounts, <br>3 hosted domain and 6 parked domains.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="prd-bg">
+                    <div class="icon-bg">
+                        <?xml version="1.0" encoding="utf-8"?>
+                      <svg width="50px" height="50px" viewBox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_4" />
+                        </defs>
+                        <use xlink:href="#img_4" fill="#FFFFFF" stroke="none" />
+                      </svg>
+                    </div>
+                    <div class="prd-info" id="prd-info-id">
+                        <h4 class="prd-bg-title">Geek</h4>
+                        <p class="prd-bg-dsc">Geek Plan has 600GB Web space, <br> Unlimited bandwith, <br>8 email accounts, <br>3 hosted domain and 8 parked domains.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="prd-bg">
+                    <div class="icon-bg">
+                        <?xml version="1.0" encoding="utf-8"?>
+                      <svg width="50px" height="50px" viewBox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_5" />
+                        </defs>
+                        <use xlink:href="#img_5" fill="#FFFFFF" stroke="none" />
+                      </svg>
+                    </div>
+                    <div class="prd-info" id="prd-info-id">
+                        <h4 class="prd-bg-title">Shared</h4>
+                        <p class="prd-bg-dsc">Shared hosting 100000GB Web space, <br>Unlimited bandwith, <br> 77 email accounts, <br> 103 hosted domain and 600 parked domains.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="prd-bg">
+                  <div class="icon-bg">
+                      <?xml version="1.0" encoding="utf-8"?>
+                    <svg width="50px" height="50px" viewBox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_6" />
+                      </defs>
+                      <use xlink:href="#img_6" fill="#FFFFFF" stroke="none" />
+                    </svg>
+                  </div>
+                  <div class="prd-info" id="prd-info-id">
+                      <h4 class="prd-bg-title">Otto</h4>
+                      <p class="prd-bg-dsc">Shared hosting 100000GB Web space, <br>Unlimited bandwith, <br> 77 email accounts, <br> 103 hosted domain and 600 parked domains.</p>
+                  </div>
+              </a>
+
+
+              <a href="#" class="prd-bg">
+                <div class="icon-bg">
+                    <?xml version="1.0" encoding="utf-8"?>
+                  <svg width="50px" height="50px" viewBox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAD+lJREFUeJztnWuQHNV1x3/39mt2V2ItIYFIAQKBtJJ5SBgJ4RiDQwyY9yNlHCeVL8SxEyD5EKfKlpN8SaXKjv0pBeWkKpVUcFJxXEnKrjLmFSrY4AKXwUQSRg/0YPVEkvXaXebRj3tvPnTPTE9Pz6xmt2cg0vyrNNO6p8/tmf+595x/3+7phSGGGGKIIYYYYoghhhhiiCGGGGKIIc4ViKI6enRH9LvCcJvBXC2MWG0EY0X1/SHBlMBMgtgsJM8+OWF/r4hO5x2Ax3ZGdxnNE8CKAj7P/yfstSzzpSdWOS/OpxM5H+fHtqtNRvM05x75ACuUEi88tk19ZT6dzHkGPLpdfRXM1+dz8LMHYtO311jfmJPnXJwe3x7eoRHPMM8ZdBZBS8k9T07Yz/bq2HMA/niX8VSkdgMX9+p7VsNwwHKslU+sFH4vbj2PYB2qBxmS3w7BJQk3PaHnABjJA736nCuYCzd270cx6wo8fUBHEToKMVqBMYX12xVCIKSFtB2k3TsFHWHMul5d5nB0sax3n3wov4YKfJRfRUcRRuuiuu4KISXScbDcEpbrYXmlonrumZu5hH98Dj5tUIFPVKsQVsqsfXmECydHWXzExgAkE8FgmtuNtnZ7Y96Ypr3ZZtrspy+KOHplyM5bp3HHFoAQWK5XxNfqmZsC59+ZwyiF8muElTKf+o+FLHvXjdsbLxlyZyM/Y28jPxOk8cM244dtzjtq8frn38cVEmnZCMvq0zfujA9Ex9fTzsQbXs/kmzOwxw355JummQt3OFz+qovyq6igJ/VYGAYeAB2G6DDAmg65+qfxep1JvRgzC7kZu2mz0518Q3yMpGHVSyXkVPyZdBj298vnYLABMAYV+kS1MmtfHsMJRIoo0yHP00p+tq3FnvQziz3dZvuCiRdLRLUyKvQHp8QSDDQAKgzQgc/Co7Biq0dzIJpcwlMDNZ/8jD1LbjzaO5Nft1/6hsfoYYMOfFQY9JmFVgwsAEZrdOAT1apc/98LQMfnEp3Ib20z+akmYydjb21LAphn13DVD0eJalV04A9MDsMAVZAKfFRQ4+LtNkv3O0CG/Nz0014PNIZIBUQmwqATR4klbGzhAiKf/C7FGGDxpMUFb0lOXF9D2A52aaQfNLRhIAEwSqHDAFOuse6lRXFbDrmzkR+ZiFDVCE1AoH20jjCAhYUtS9gixBElpLAbHc5OftO++tkRXpmYQTsexnEHIksHEgDl14hqFVb/fITRaZmokC7FNkO+wRBon0gH+LrK6Pn7uOFTP+SSia0YA/t3rGXzS/dQOXEpSmps4WILL14wOUPyAUqnJJf91GPytgrSsrFH+39Vte8B0GGIjgK8U4o1P1vYs9JRaAJVJdIBNVVmzcdfYOPd38V2wkZfqze8zJXrXuO1pz/P9ldvw5WjaBnhihHqZa4hbvKCnLKv+LHHwQ0zaC9Ahy7ScfpDTIL+FuFEdobVCtf+eBQrqBdemkontZ0lPzQhvirjqwrKO8Idj3yTTzzwnRby67CdkE8++B0+8/vfgtIR/KhKVZVRJswl3+SQjwEZCFY9UyKsVgYiS/saABUGKL/G4gOC5W/Hay1tSiZFfj0gxhh8XSNQFarRDEtW/IKHv/wVLpnYSrJrR1w6sZWH/2wTS674BdVohpqqEOoapqGUTGtAUiKgbr/oTYcFB0y8WNhnWdq3ALTIzhdaz3i7yUitFTVVwVdlquYUG+55iru+8DeMLJiOSeo2IBPb6IJp7v3iN7nx3n+hxmmqqoyvK2iinNmQ7rMZnNU/GBmILO1bDVCBT+RXuewtl/Gj9hnJzMgEycivMrpkknt+729ZdMHheN/ZMkHGLjCsvfl5Lr5yG88+9TjlE5cSSYUrPSzcplsqCumAjO+3uOhNm2M3VvsqS/syA3QUoQMf3ve59qXR3GKbJt8YQ6DjnF0Jp1l544946E/+Ys7kkxrli5cd4HN/+pdMbHyOqpqhpqoEukrL0keG/HoXVzzjwYyPDnx0FM2dkC4oPgDGJKmnwkdfHcUrJyokeWkU22Rb6YiaKlNVZbSbFNr740Jb37XzsehKft3XtgNueegp7n7kWxjvPWq6Qk2V0aiGJE4fq74E4k1Llr/kEvlxKupHQS48ADoKUaFP6aRm1c/jK015SkdjCJVPTZepqGnOv/wNPpsqtKld85FnyyG/Wdlh+aqt/M6XN7Hk0s1JgX6fyASZ2ZByM4ZLf+LiHovQUYCOil8tLTYAxiQnXVXWvTiGUGJW8mvmFDfc3Sy0qa66HKdDW11VZclP+YyOTfPAF7/OjXf/Kz6n8XWZUPttKaleE0QouOJpL5alfZgFhQYgXu/xWTIp+LV33I4yU+mImi4TWce59w//iqtveh4h2lNBLrqRT3fy68ERwnDdTc/x0Jf+msg6SaCrKB0l/qbpkvgt3eIwvqt5DbtIFBYAo3UcgGqN654f6ygzMRDoGn5U5ebP/gNLL9nb2k+fyU/bL7x4L7/xwD/jqyqhCZrkpwZO3Wflf3pEtVq8plWgLC0sAMqvofwqK/7X5bxfxerW0JzK9S+t0GijGFt8lBXXvN7Sx7zJN7STP0taWrX2NUoLTsVnzOg2uVyvBaNHJRf9zCLyqyi/dmaknAEKCYCOosZlxqt+MtomM9OzwWiNNprxJUdb+uiJ/AzRJks6OfZMGwaMBjQs/MhxjNEoo1v6S9ctY+CyZzyY8uPLlwXJ0mICUJedr4zg1CTdrtuCQCCZOn5Bw79n8lPvcyJfJ+QnM2NmahEgkcjMDDAtacieESx/3iWqVWJZWgDmHQCjNToKsWcUK94sNUdM8pLO/QYQSASS909cyNTxZf0nP/PP6Ga7MXD6+IWUp85HYmFMsliYUkHZWrDsFRs5E6FVMTeSzT8ASmG0Yul+B6GStuQlnfvT09kSNpZw2b3lhi4dd/h/Qlwb+bOlpbRPanvXWzdgCweBhUC0qaCWFGoMMhKct9fCfFgCUIfQrakmm/vTSkhiYwmbd7euz+9sFvKzbbPOjA7kY2DX29fHnwe7I/nxDGjaTHG3xs4/AEJKhLQ4dlmIkZ1yf6sMlcJGYnP80OXMnDq/tcMBkj99ejHHD1+GFDYCq8W/NQjNWqBtw8zlCmHZCDn/8Tv/AFjxXcbRQos91/s5uT+VS+t1wAgs4WBLhz1bNib7MVDyjTG8s2UjlnCQjfST6i5Dfr3f9z4RoRfaSNv5cAQAQLoedmmUbbdUCTydT36jLd6WwsbCYe/W9e3EJ/s19u+S67vVhFzyNRhtQMOubeuxiGdjdiEuS74BwhHDgTsD7NIo0mkuac8HxQTAtpGOi1ng8Pat1XrS7Eg+BiQWUlgc23cllZnMTcVZ4tJt0EZ+ti2X/ETz1299LM+Mc+zgCkSSDoHMDMh8fgP77gtg3EM6bmG/KyisCFteCbs0yuTHAqaXRl3JNxgEAhsHSzrs3ryx2VGK6ELIT4ivp516+86tcfqxsCGdfnIkKAYqyzRHf11heyMF/p6gSBUkJdJxsUslttxZaSU8Qz7JthQ2Ng57tmxotM2J/I6pJt1uWvbZvX09Fk48+uumLipo78M+dqmEdNxCcn8dha6GWq6H5XqcXGE4vCbImQHJF0zaJTZC2Ly3bxWV6fFW8nNy/WxpqTXVpPdvJb88M857+1c20o9pHJRMDYjfT6wLmZkQje9XJIq9HiBEkopG+OXtVZTdHO1p8uttILCFgzQOe5Jzgvmu67Tn/1byMbB723okzfSTXXJIk68tzb4HQ+xSknpEgScB9OGKmLQdLMfDP1+y5+O1JvmZkVvflNjYIk5DRazrmBTxjd8apNsb6qeefnKWHBozwHD40xHhUgvL8ZB28TdpFX9NWIiGLN31yRr+mMpJRcmmASksLBwO7llNrbygsU/jvVNaSshMr+t0G/X1QNUqYxyanEAm+j+b7xtvxuCPGw7dFsay0/UKH/3Qp7sipG3HH3iBx7bbai2EN75wshGflMV3Nu95a30byXW/bFC6nWC1tGdqwu7tG5C4WFi03EltUodMZsX++wPEQg/pesX+nDXNVV96JS7ItjfCwetCppepnPTTvD3QEjYSh91bN7SloDmTn1cTgF3brsdOTr6y5JOkLQO8v1xx/AYdy86CC28afQuAkDJJRSO8dW8lbsyQX28TxDPg4M5rmD65dH7kt8nPZh+nT17A/j1XI4WbUj+to75+rL2/HRde6XqFys4s+npvqOW4WF6JqeVw6Nogl3xDfIkmTkMeL37vC7GpV/Jz5WeqD+D57/8BtvBS6idDfuLzq40R1eWxorMKWnLohP7eHS0EluPhjIyy444qytY5qSj+0rZwcSyPI5NX8V9//zX27byGwC91Jz+1rtNpn8Avsfeddfz7P/45xw5O4IgSlnDzyQe0a9j/YIAzMorl9KfwptH33wdIx0GGLsFimz23+Kx8sdQMAjS2hRF4YhQhBccn1/L0P61GoVPpyLTsn00fzcbsPgaEhYOHJ0u4ooQwMpd8DBz8TIha5ODa/f9tAAzoFzKWV8JWEe/eNMXFr7uUTrf+aKJOrkDiijEs6eIQoVEtdtOBYNP4Tw75CCQSQbz6mudXf/cXa478ZoRTGi90vacbBhIAYVnxCuKCEjvvrLH230ZT6ac5HeqbEgdXOqkR3OCy+Z7YjKBeSDra8mZLlnwD7PutAGssWe8Z0GMLBvYz1XgdpcTRaxUnL2+9Cy3ezr6bxijtZmvo9y62bL7Ps81cGXH6YzSeoDIoDCwAaVm6/f749nCguUxAe0rKTS1dRnA3W1ZmtvgJzeSAZGcWA/2lvOW4SNejfJHg0IYgtxh3uz0wz9aWWjrYGv/PsR27SeFfEg+QfsvOLAb7rIiULN19u0/kZYtrZ6Uzmwoys9iysrduC0cNh+4LsUtjA5GdWQz8aSnScZC2i1rksPfTfmfyW0Zyd1tbLehEfird1W2H7w4xH3FjkTAA2ZnFB/K8IMsrYXkj7L855MTq6Ixk5mwStKVedLA1uY9tp69RHL1VY/V5vacbPpAnZgnLwvJKOFqx+ZEyVzzrsGiHzcJD1pkRPEux7WYzQHm5ZmqN4tD9CndsAZZX+kCelgVzC8AUBTw3znI9MAYhLSbvq7L3rtrAH9rnumNFX2ac6tVhDgEwR0AU8uC+eOQlt7ScDY+txBzp1aP3owuxGcNEz34dIG27bxc7Bg4hNvfq0nsRNjzXs885AqH5Qa8+PQfAsq3vYjjQq9/ZD7NTOtb3e/XqOQBPrBS+BX/Uq9/ZDil4tNcnp8MczwOe+Kj9IxCb5uJ7dkJsenK18z9z8Zzzidi311jfEEZ8leb5zbkIIxBfm+tfz4ACHoP+6PbwdhB/x7n3d2QK+SM+ha08Pb4z+pzR3Hm2/hkrYSgbYXYIxC+L/DNWQwwxxBBDDDHEEEMMMcQQQwwxxBBDnDv4PwEj6DXPiTzaAAAAAElFTkSuQmCC" id="img_7" />
+                    </defs>
+                    <use xlink:href="#img_7" fill="#FFFFFF" stroke="none" />
+                  </svg>
+                </div>
+                <div class="prd-info" id="prd-info-id">
+                    <h4 class="prd-bg-title">Gleer</h4>
+                    <p class="prd-bg-dsc">Shared hosting 100000GB Web space, <br>Unlimited bandwith, <br> 77 email accounts, <br> 103 hosted domain and 600 parked domains.</p>
+                </div>
+            </a>
+
+
+            <a href="#" class="prd-bg">
+              <div class="icon-bg">
+                  <?xml version="1.0" encoding="utf-8"?>
+                <svg width="50px" height="50px" viewBox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_8" />
+                  </defs>
+                  <use xlink:href="#img_8" fill="#FFFFFF" stroke="none" />
+                </svg>
+              </div>
+              <div class="prd-info" id="prd-info-id">
+                  <h4 class="prd-bg-title">Blur</h4>
+                  <p class="prd-bg-dsc">Shared hosting 100000GB Web space, <br>Unlimited bandwith, <br> 77 email accounts, <br> 103 hosted domain and 600 parked domains.</p>
+              </div>
+          </a>
+
+
+          <a href="#" class="prd-bg">
+            <div class="icon-bg">
+                <?xml version="1.0" encoding="utf-8"?>
+              <svg width="50px" height="50px" viewBox="0 0 96 96" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAA+RJREFUeJztl01PE0EYx/+zqS+JUaqoRCu1aOxRS+LFxASNBz169eJn0IvxW+hH8OYVv4EXhRgTX6IiCdFWFIKIFt9Sdrs7Hlra7s60O1DoY/T/S0jLPM/OPjO/nZktQAghhBBCCCGEEEIIIYSQfx3llHV7poBo7Q6gSoAuKK2bAQ3o9U/d7LD9PRlXybaO78rS1kjXiXi7bf27srSt379Va6ymzlrjbbGaYvF4fSpZS7u+sqfxPLPTu1m9d62cNrXpAm7PFKCDZ9A62yiqYzCWQccEJAZtCIhNVHyAXSfCMuiuArROTFT8vsrSFpvgDcXb9SsNKKWrmR2Z8TQJXq9go+/gLqCzloDRoixttjzRNqNZW/61XdujW0tca2Trfng3JdtBADCxmQK2Pq4tcW0uYb39Il0fNK2jM5bEGJm0BACxp3/3Tg8Xz+UwNroPXkbh1ewKHj9dgL8Wxi7avcvDhXN5jB3Pwst4eD2zjKknH6x5E+dPYKxwoJH3ZgnTU+/g+x15m5SmUuL99m+LJx6IQsqVTisgtiyvTORRPJmF9hRqQYR8fgjjp0eMaq5cPIHiqWFoz0MtiDBa2I/SeM7Iu3ypiGLxUDtvbBils3n76LawTTnmbbotTVoTlxXQQgE4ltuLmh/BDyME9cbnwcN7jNxcbsjIGx7Za9SdG91v5B0YGWrFu74lbONWp4y4Jdl5q+uNg4B4p7UgbE2UX9cIwghrQWjsi93ynPqrR10Gk9KmU/KcDuAe9Bu34LYFddxgrlxFLYiafyH8eoSlpV9GAXPvvxp5nxd/GF3Ovfti5C0vVM0bJ/q3HsADeJPq703PZGMCoPH4ySLK86v4+TtAGGl8+vgdb98sG3lTU/Mof/iGn799hJHGwnwVs68WjbzpR2VUKiutvMXKCmZffnIfx997ADuRfs2tF621a/3h8j/+Au5SszJ/FePX/es959h5BcR6GdBTtXUHsG2vt28bTgdwH1tOkg1uQfYbDeQXcOKtQyXzeh7A3ZsHFu+Cu4C+CnB9AxmAyL/oAG70mcLVBesLL3Fk8qjamjOAbA8UIAwFCEMBwlCAMBQgDAUIQwHCUIAwFCAMBQhDAcJQgDAUIAwFCEMBwlCAMBQgDAUIQwHCUIAwFCAMBQhDAcJQgDAUIAwFCEMBwlCAMBQgDAUIQwHCUIAwFCAMBQhDAcJQgDAUIAwFCEMBwlCAMBQgDAUIQwHCUIAwLgJWt72Kf5dKWoKLgIf91/Hf8jwtIV2Awg1wFWyG1ebc9SRVwOQRVYZCCcADOCwpggqAB1AoTR5RZeliCCGEEEIIIYQQQgghhBAizx8uJY6yt9P84wAAAABJRU5ErkJggg==" id="img_9" />
+                </defs>
+                <use xlink:href="#img_9" fill="#FFFFFF" stroke="none" />
+              </svg>
+            </div>
+            <div class="prd-info" id="prd-info-id">
+                <h4 class="prd-bg-title">Winter</h4>
+                <p class="prd-bg-dsc">Shared hosting 100000GB Web space, <br>Unlimited bandwith, <br> 77 email accounts, <br> 103 hosted domain and 600 parked domains.</p>
+            </div>
+        </a>
+
+
+
+            </div>
+                       
+        </main>
+
+        <footer class="foo">
+          <div class="foo-link-wrap">
+              <div class="foo-uno loc-tags address-box">
+                  <a href="index.html" class="home-auto x-title">
+                  Akkadian
+                  </a>
+                  <div class="foo-loc-tag  ad-tag">
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg  width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <image width="100" height="100" xlink:href="data:image/png;base64,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" id="img_10" />
+                        </defs>
+                        <g>
+                          <use xlink:href="#img_10" fill="#FFFFFF" stroke="none" transform="scale(0.2 0.2)" />
+                        </g>
+                      </svg>
+                      <div class="loc-tag">
+                          <address>
+                              Haile Selassie Rd,<br>
+  Moi Avenue,CBD,<br>
+  Nairobi, Kenya<br>
+                          </address>
+                      </div>
+                      
+                  </div>
+  
+                  
+                  <div class="call-box ad-tag">
+                      
+                  </div>
+  
+                  <div class="email-box ad-tag">
+                              
+                  <address>
+                      <a href="mailto:info@akkadiansoftware.com" class="email-tag ad-tag">info@akkadiansoftware.com</a><br>
+                      <a href="mailto:sales@akkadiansoftware.com" class="email-tag ad-tag">sales@akkadiansoftware.com</a>
+                      </address>
+                  </div>
+  
+  
+              </div>
+              <div class="foo-uno f-link useful web-tags">
+                  <p class="foo-link-title">Akkadian Main</p>
+                  <a href="./blog.html" class="p-a-home sec-link">Our Blog</a>
+                  <a href="./aboutus.html" class="about-us sec-link">About Us</a>
+                  <a href="./faq.html" class="cont-us sec-link">Faq</a>
+                  <a href="./404.html" class="cust-rev sec-link">Customer Reviews</a>
+                  <a href="./policy.html" class="p-policy sec-link">Privacy Policy</a>
+                  <a href="./404.html" class="t-c sec-link">Terms and Conditions</a>
+
+                  
+              </div>
+              <div class="foo-uno f-link v-tags-w-linktags">
+                  <p class="foo-link-title">Free Web Hosting</p>
+                  <a href="https://tiiny.host/" target="_blank" class="toyota-foo sec-link">Tiiny Host</a>
+
+                  <a href="https://www.gatsbyjs.com/products/cloud/" target="_blank" class="suv-sec sec-link">Gatsby</a>
+                  <a href="https://www.netlify.com/" target="_blank" class="trucks-sec sec-link">Netlify</a>
+                  <a href="https://vercel.com/" target="_blank" class="minbus-sec sec-link">Vercel</a>
+                  <a href="https://pages.github.com/" target="_blank"  class="bus-foo sec-link">Github Pages</a>
+                  <a href="https://surge.sh/" target="_blank" class="mach-foo sec-link">Surge</a>
+              </div>
+              <div class="foo-uno f-link cat-tags w-cat-tags">
+                  <p class="foo-link-title">Paid Web Hosting</p>
+                  <a href="https://domains.safaricom.co.ke/" target="_blank" class="faq sec-link">Safaricom Domains</a>
+                  <a href="https://wordpress.com/" target="_blank" class="nissan-foo sec-link">Wordpress</a>
+                  <a href="https://www.thcservers.com/" target="_blank" class="mits-foo sec-link">THCServers</a>
+                  <a href="https://www.bluehost.com/" target="_blank" class="benz-foo sec-link">Bluehost</a>
+                  <a href="https://www.webhostkenya.co.ke/" target="_blank" class="mazda-foo sec-link">WebHostKenya</a>
+                  <a href="https://cloud.google.com/solutions/web-hosting" target="_blank" class="ford-foo sec-link">Google Cloud</a>
+              </div>
+              <div class="foo-uno f-link cat-tags misc-tags">
+                  <p class="foo-link-title">Partners</p>
+                  <a href="https://www.microsoft.com/en-ke/store/b/home" target="_blank" class="volk-foo sec-link">Microsoft</a>
+                  <a href="https://www.apple.com/ke/" target="_blank" class="isuzu-foo sec-link">Apple</a>
+                  <a href="https://www.safaricom.co.ke/" target="_blank" class="bmw-foo sec-link">Safaricom</a>
+                  <a href="https://www.mozilla.org/en-US/" target="_blank" class="el-foo sec-link">Mozilla</a>
+                  <a href="https://about.google/products/" target="_blank" class="shand-foo sec-link">Google</a>
+                  <a href="https://aws.amazon.com/" target="_blank" class="brandnew-foo sec-link">Amazon</a>
+              </div>
+          </div>
+          <div class="crights-box">
+              <p class="c-right">&copy; 2023 Akkadian Software. All rights reserved.</p>
+          </div>
+      </footer>
+
+        <script src="blog.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

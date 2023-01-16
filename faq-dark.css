@@ -1,0 +1,155 @@
+/* check updates on styles.css - and copy them here for future reference*/
+
+/* styles for displays 500px and below */
+* {
+    transition: .5s ease;
+}
+.faq-header-card {
+
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1pc;
+    padding: 1pc;
+
+
+}
+
+.faq-text {
+    width: 70%;
+
+}
+
+.faq-img {
+    width: 18pc;
+}
+
+.faq-title {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.faq-light {
+    color: #666;
+}
+
+.flead {
+    color: rgb(87, 140, 238);
+}
+
+.faq-linker {
+    font-size: .9rem;
+}
+
+
+#faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2pc;
+    margin: 3.5pc auto;
+    padding: 2pc 2pc;
+    color: var(--akkadianMain);
+    background-color: #111;
+}
+
+
+
+.faq-main {
+    margin-top: 5pc;
+    display: grid;
+    grid-template-columns: 2.5fr 6fr;
+}
+
+.faq-nv {
+    height: 2.5pc;
+    color: white !important; /* Important declaration has been used since its absence removes color from the first faq-nav-btn;*/
+    padding: 1pc;
+    margin: 1pc;
+
+}
+
+.faq-content {
+    display: flex;
+    flex-flow: column;
+    gap: 1pc;
+    padding: 1pc;
+    /*
+    box-shadow: 0pc 0pc .9666pc .3pc #eee;
+    */
+    height: auto;
+    display: none;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.faq-content-cards {
+    display: flex;
+    justify-content: start;
+    gap: 1pc;
+    align-items: flex-start;
+}
+
+.faq-card {
+
+    width: 50%;
+    padding: .2pc;
+
+}
+
+.active, .faq-nv:hover {
+    border-left: .1pc solid white;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:750px) {
+    .faq-main {
+        font-size: .8pc;
+
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .faq-main {
+        font-size: .8pc;
+
+    }
+}
+
+
+@media only screen and (max-width:465px) {
+    .faq-header-card {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .faq-content-cards {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .faq-card {
+        width: 100%;
+    }
+    .faq-main {
+        font-size: .8pc;
+
+    }
+}
+
+@media only screen and (max-width: 375px) {
+   
+   
+    .faq-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faq-img {
+        width: 10pc;
+    }
+}

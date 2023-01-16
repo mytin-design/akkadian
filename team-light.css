@@ -1,0 +1,237 @@
+body {
+    color: #000;
+}
+
+.bthemebtn {
+    margin: .8pc .8pc .8pc 3.2pc;
+}
+
+
+.bh-team {
+    margin-top: 5pc;
+    margin-left: 5pc;
+    padding: 1pc;
+    width: 60%;
+    color: #000;
+}
+
+.tintro-sec {
+    width: 70%;
+}
+
+.main-tle {
+    padding: .5pc;
+    font-size: 1.7rem;
+}
+
+.tm-tm {
+    padding: .5pc;
+    color: #333;
+}
+
+.tintro-btns {
+    padding: .5pc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+
+/* start team container styles */
+.team-wrapper {
+    height: auto;
+}
+
+.team-wrap-title, .tm-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.tm-wrap {
+    margin: 2pc auto;
+    width: 90%;
+}
+
+.tm-title {
+    font-size: 1.3rem;margin-bottom: 2pc;
+}
+
+.tm-inner {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: .5pc;
+    padding: 1pc;
+}
+
+/* grid for other employees may be more than three, so specify separately */
+
+.sn-inner {
+    grid-template-columns: repeat(4, 1fr);
+    font-size: .9rem;
+}
+.tm-bg {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1pc;
+    padding: 1pc;
+    border: .1pc solid #eee;
+}
+
+.tm-img {
+    width: 10pc;
+    height: 10pc;
+    border-radius: 100%;
+}
+
+.tm-bx-pro {
+    display: flex;
+    flex-direction: column;
+    gap: 1pc;
+    width: 70%;
+    text-align: center;
+}
+
+.tm-mb-name {
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.tm-small {
+    color: #777;
+}
+
+.tm-des {
+    width: 95%;
+    color: #555;
+    text-align: center;
+}
+
+.tm-snet {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.sn-inner > .tm-bg > .tm-snet {
+    font-size: .7rem;
+    display: flex;
+    gap: 1pc;
+}
+
+.sn-inner > .tm-bg > .tm-snet > .sm {
+    font-size: .7rem;
+    display: flex;
+    gap: 1pc;
+}
+
+@media only screen and (max-width:996px) {
+    .bh-team {
+    
+    width: 90%;
+    
+}
+
+.tintro-sec {
+    width: 70%;
+}
+
+.tm-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 18pc);
+    justify-items: center;
+    align-content: center;
+}
+
+
+}
+
+@media only screen and (max-width:750px) {
+    .bh-team {
+    
+    width: 100%;
+    
+}
+
+.tintro-sec {
+    width: 70%;
+}
+.tm-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 18pc);
+    justify-items: center;
+    align-content: center;
+}
+
+
+}
+
+@media only screen and (max-width:620px) {
+    .bh-team {
+    
+    width: 100%;
+    
+}
+
+.tintro-sec {
+    width: 80%;
+}
+
+.rdm-btn, .contact-btn {
+    width: 6.5pc;
+}
+
+.tm-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 15pc);
+    justify-items: center;
+    align-content: center;
+}
+}
+
+@media only screen and (max-width:500px) {
+    .bh-team {
+        margin-left: 0;
+    width: 100%;
+}
+
+.tintro-sec {
+    width: 100%;
+}
+
+.rdm-btn, .contact-btn {
+    width: 6.5pc;
+}
+
+.tm-inner {
+    display: flex;
+    flex-flow: column;
+}
+}
+
+@media only screen and (max-width:375px) {
+    .bh-team {
+    
+    width: 100%;
+    
+}
+
+.tintro-sec {
+    width: 80%;
+}
+
+.rdm-btn, .contact-btn {
+    width: 6.5pc;
+}
+
+.tm-inner {
+    display: flex;
+    flex-flow: column;
+}
+}

@@ -1,0 +1,136 @@
+body {
+    color: #fff;
+}
+
+.bthemebtn {
+    margin: .8pc .8pc .8pc 3.2pc;
+}
+
+.cbox {
+    margin-top: 5pc;
+    margin-left: 5pc;
+    padding: 1pc;
+    width: 60%;
+    color: white;
+}
+
+.cintro-sec {
+    width: 70%;
+}
+
+.main-tle {
+    padding: .5pc;
+    font-size: 1.7rem;
+}
+
+.cm-cm {
+    padding: .5pc;
+}
+
+.tintro-btns {
+    padding: .5pc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+
+.career-wrap {
+    margin: 3pc auto;
+    width: 70%;
+    height: 10pc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cintro-btns {
+    display: flex;
+    gap: 1pc;
+}
+
+.ctitle {
+    font-size: 1.7rem;
+}
+
+.no-jobs {
+    padding: 1pc;
+}
+
+.back-ltr {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width:996px) {
+
+.cbox {
+    width: 70%;
+}
+.cintro-sec {
+    width: 100%;
+}
+
+
+
+
+}
+
+@media only screen and (max-width:750px) {
+
+.cbox {
+    margin-left: 0;
+    width: 90%;
+}
+
+.cintro-sec {
+    width: 100%;
+}
+
+}
+
+@media only screen and (max-width:620px) {
+    .cintro-sec {
+        width: 100%;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:500px) {
+    
+
+.cintro-sec {
+    width: 100%;
+}
+
+.rdm-btn, .contact-btn {
+    width: 6.5pc;
+}
+
+
+}
+
+@media only screen and (max-width:375px) {
+
+    .cbox {
+        width: 100%;
+    }
+
+.cintro-sec {
+    width: 100%;
+}
+
+.rdm-btn, .contact-btn {
+    width: 6.5pc;
+}
+
+.no-jobs {
+    width: 100%;
+}
+
+
+}

@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en-KE">
+    <head>
+        <title>Akkadian - Web Design | Hosting | Maintenance.</title>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index, follow">
+        <meta name="keywords" content="website, web design, web development, branding">
+        <meta name="description" content="Akkadin Web Designs: High end websites that brand you and your business to the world.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Facebook and Twitter OPengraph protocols-->
+        <meta propoerty="og:title" content="Akkadian:Web Design | Wen Hosting | Server Maintenance">
+        <meta property="og:keywords" content="website, web design, web development, branding">
+        <meta property="og:description" content="High end websites that brand you and your business to the world.">
+        <meta property="og:image" content="https://image.png">
+        <meta property="og:image-height" content="20">
+        <meta property="og:image-width" content="20">
+        <meta property="og:url" content="https://www.akkadian.com">
+        <link rel="icon" href="./images/myLogo.png" type="image/png">
+        <link rel="apple-touch-icon" href="./images/myLogo.png" />
+<meta name="msapplication-TileImage" content="./images/myLogo.png" />
+     
+        <link class="akkSheet" rel="stylesheet" href="styles-dark.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+        <!--Bootstrap-->
+    </head>
+    <body>
+        <!--For scaling purposes - it is recommended you use classes and id's-->
+        <header class="main-head">
+          <video id="web-hero" style="display: none;" src="./videos/web-hero-b-ck-v01.mp4" autoplay>
+            
+          </video>
+            <nav class="navbar nav nav-bar">
+                <div class="x-title-bag media750">
+                    <div class="x-logo">
+                        <a href="./index.html" class="x-title">Akkadian</a>
+                    </div>
+                    <div class="nav-main media500">
+                        <a href="./services.html" class="services xl-nav">Our Services</a>
+                        <a href="./products.html" class="products xl-nav">Our Products</a>
+                        <a href="./team.html" class="team xl-nav">Our Team</a>
+                        <a href="./careers.html" class="about-us xl-nav">Careers</a>
+                        <a href="tel:+25419444041" class="contact-us xl-nav">Help</a>
+                    </div>
+                </div>
+
+                <div class="log-bx">
+                    <a href="./login.html" class="log-link media500">Sign In</a>
+                    <button  id="themeId" class="themebtn media500" onclick="turnLight()">
+                      <abbr class="themeTitle" title="Change Theme">
+                          <?xml version="1.0" encoding="utf-8"?>
+                      <svg title="Change Theme" id="nightTheme" width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <image width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAABK9JREFUeJztne1x2zgQQF9u7n/UQdBBdBWEHZw6CEtwB2EHSQdmB/ZVYF4FUioQU4HUge8HpZFOSYwltEusKLwZjDWmzSdi8UlCEBQKhUKhUCgU9HmX+w0YsQTeAxUQDomL10f6Qzp/3QE/zn4/GXMJyBL4xBCAClgonXfPEJwO+IcMAbolAvAF2AKvE6XtwRnMr+6G+Ay8MF0QfpeeDu/lbvnMtLVBml4sL9ojK3wG4jw1VhfviYCPpkmStjZZ4Icv5M/ksUmFP7VOpERg6CyXCuf6Dmw4zSvg/3OOI9WZOwAPDHOYsa7ZsQJ2pJfQHvh2OE/qPOQx0b1K9LmlJi0j9kDLqZSnsgDWif76Src7UkrlnmFkozEjX5JWM1tmOEFMCUaD3q2RlGC0zDAQMD4YHboZMTYYG2W/K8YEw6KdHhuMRtnvippxpVJjCHzOmGDsuX7A4JoV8mA8o9dXHFkgvw2zMfC7IiAvma3Re3gS+jtmHgyQj/NbI3+T2e+KhryZUWX2uyIg7zOskPQbG0O/K17I24E2Av/e0O8Kyahqj/7Q9kgQ+F+Z+dD2HElTURv6JbXzwdDvihrZ8NKKKrPfHZLaEQz9ktpRGfpdURPPjMbQHwT+1tDvjljptB7VtAJ/MPS7IuC/dlj63dGQt3bUEb913+WOWGfeGvufI37LOwLuWJJ3ZLMQ+Ge3QuQtHng7M3pjfx3x7439V/OH8vmqyHHr5iJW+ltjvztiD6Csm4tY/3VXzZWk/7AcXUn6j2DoV0GzyYpl9nds2/DYHeMsnxkci2ZAqshx6wdAMX9n7FdBMyAhcrxXdHn0qzBlQDpFl0e/CtrD3sKVaAbkQ+R4r+gqCIgNOXP7b2IRg+ZODrFMt941IrdfhdKHOOOeAnITTZZmQH5EjgdF16/4N3Lcau2XKpoB6SPHg6JrttxTk3UTTFlDKkWXR78Kc2qycvvdUfH2xGyd2b819rujPKByyJ68j1D7zP6r0R5ldZHjlbLvkthDMGu/O2LLgKzb8Tri3xn73VEWyjmk5+0MaY39ZSnpBQ3xZqMstp6QQDxDmhn7XdKRt5a0An8w9Lujxn8taQ39LunJ25Z3An9l6HdHTTxDXgz9VWa/S3rimVIb+juB/242DgDZ1ho7ytYak9IRz5A1eTefsR71uSIgK6VPhu+hF/itn9e4okEWlEcjf5XZ75INeTOlyex3RyD+AMs6U2I3Hqfo01wxZpvYJ2y2ie2F/rsJSo08KGtsNlKW1tQddzIkbpEHZYfNVuPSoLwyfOPP7GmRZ8grw22OoOgfG5S1st8lLeOCciytml9XMSYoxwFHUPK7pGV8UHboBSYlKLMPTM34DDkG5hH4+0r/Avk8ybp/c8OKtJJ6TFvgK0NwUmtOm+hWW8ni7XN3gWHy9lHhXBt+/tq8X22v8enMHUh7krkB/kr4v5uhIb2m5EqzJyC7de8h9RYZ4JUV8tsduVJjdO2uqfEZmLtbCXlJjY+m7JkZD3lTCAxNRc90QegPzmB6ZTNgybB65Jnr5jKXac+pJoQpLsTbPESLJcPksOI0v+Dw88PF355vPdhzmrccXxcKhUKhUCgUbp7/ADHCYO4TBQwjAAAAAElFTkSuQmCC" id="img_1" />
+                        </defs>
+                        <g>
+                          <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.2 0.2)" />
+                        </g>
+                      </svg>
+                      </abbr>
+                  </button>
+
+                </div>
+
+                <!--Side nav panel-->
+                <div id="sideNav" class="sidenav">
+                  <a href="javascript:void(0)" class="closenav" onclick="closePanel()">&times;</a>
+                  <a href="./services.html" class="services xl-nav">Our Services</a>
+                        <a href="./products.html" class="products xl-nav">Our Products</a>
+                        <a href="./team.html" class="team xl-nav">Our Team</a>
+                        <a href="./careers.html" class="about-us xl-nav">Careers</a>
+                        <a href="tel:+25419444041" class="contact-us xl-nav">Help</a>
+                        <button class="themebtn"  id="themerId" onclick="turnLight()">
+                          <abbr class="themeTitle" title="Change Theme">
+                              <?xml version="1.0" encoding="utf-8"?>
+                          <svg title="Change Theme" id="nightTheme" width="15px" height="15px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                              <image width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABHNCSVQICAgIfAhkiAAABK9JREFUeJztne1x2zgQQF9u7n/UQdBBdBWEHZw6CEtwB2EHSQdmB/ZVYF4FUioQU4HUge8HpZFOSYwltEusKLwZjDWmzSdi8UlCEBQKhUKhUCgU9HmX+w0YsQTeAxUQDomL10f6Qzp/3QE/zn4/GXMJyBL4xBCAClgonXfPEJwO+IcMAbolAvAF2AKvE6XtwRnMr+6G+Ay8MF0QfpeeDu/lbvnMtLVBml4sL9ojK3wG4jw1VhfviYCPpkmStjZZ4Icv5M/ksUmFP7VOpERg6CyXCuf6Dmw4zSvg/3OOI9WZOwAPDHOYsa7ZsQJ2pJfQHvh2OE/qPOQx0b1K9LmlJi0j9kDLqZSnsgDWif76Src7UkrlnmFkozEjX5JWM1tmOEFMCUaD3q2RlGC0zDAQMD4YHboZMTYYG2W/K8YEw6KdHhuMRtnvippxpVJjCHzOmGDsuX7A4JoV8mA8o9dXHFkgvw2zMfC7IiAvma3Re3gS+jtmHgyQj/NbI3+T2e+KhryZUWX2uyIg7zOskPQbG0O/K17I24E2Av/e0O8Kyahqj/7Q9kgQ+F+Z+dD2HElTURv6JbXzwdDvihrZ8NKKKrPfHZLaEQz9ktpRGfpdURPPjMbQHwT+1tDvjljptB7VtAJ/MPS7IuC/dlj63dGQt3bUEb913+WOWGfeGvufI37LOwLuWJJ3ZLMQ+Ge3QuQtHng7M3pjfx3x7439V/OH8vmqyHHr5iJW+ltjvztiD6Csm4tY/3VXzZWk/7AcXUn6j2DoV0GzyYpl9nds2/DYHeMsnxkci2ZAqshx6wdAMX9n7FdBMyAhcrxXdHn0qzBlQDpFl0e/CtrD3sKVaAbkQ+R4r+gqCIgNOXP7b2IRg+ZODrFMt941IrdfhdKHOOOeAnITTZZmQH5EjgdF16/4N3Lcau2XKpoB6SPHg6JrttxTk3UTTFlDKkWXR78Kc2qycvvdUfH2xGyd2b819rujPKByyJ68j1D7zP6r0R5ldZHjlbLvkthDMGu/O2LLgKzb8Tri3xn73VEWyjmk5+0MaY39ZSnpBQ3xZqMstp6QQDxDmhn7XdKRt5a0An8w9Lujxn8taQ39LunJ25Z3An9l6HdHTTxDXgz9VWa/S3rimVIb+juB/242DgDZ1ho7ytYak9IRz5A1eTefsR71uSIgK6VPhu+hF/itn9e4okEWlEcjf5XZ75INeTOlyex3RyD+AMs6U2I3Hqfo01wxZpvYJ2y2ie2F/rsJSo08KGtsNlKW1tQddzIkbpEHZYfNVuPSoLwyfOPP7GmRZ8grw22OoOgfG5S1st8lLeOCciytml9XMSYoxwFHUPK7pGV8UHboBSYlKLMPTM34DDkG5hH4+0r/Avk8ybp/c8OKtJJ6TFvgK0NwUmtOm+hWW8ni7XN3gWHy9lHhXBt+/tq8X22v8enMHUh7krkB/kr4v5uhIb2m5EqzJyC7de8h9RYZ4JUV8tsduVJjdO2uqfEZmLtbCXlJjY+m7JkZD3lTCAxNRc90QegPzmB6ZTNgybB65Jnr5jKXac+pJoQpLsTbPESLJcPksOI0v+Dw88PF355vPdhzmrccXxcKhUKhUCgUbp7/ADHCYO4TBQwjAAAAAElFTkSuQmCC" id="img_1" />
+                            </defs>
+                            <g>
+                              <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.2 0.2)" />
+                            </g>
+                          </svg>
+                          </abbr>
+                      </button>
+                    <a href="./login.html" class="log-link">Sign In</a>
+
+                </div>
+
+                <button id="openNavbtn" class="openPanel mediaWhole" onclick="openPanel()">&#9776;</button>
+                
+            </nav>
+            <div class="body-head">
+                <article class="intro-sec">
+                  
+                    <h1 class="main-h-t">Professional Website Designs</h1>
+                    <p class="tm">Akkadian provides reliable Web development, Web design, and advisory services backed up by years of experience in the industry.</p>
+                    <div class="intro-btns">
+                        <a href="./404.html" class="rdm-btn">Get My Website</a>
+                        <a href="tel:+25419444041" class="contact-btn">Help</a>
+                    </div>
+                </article>
+            </div>
+        </header>
+        <main class="container">
+
+          <!--Central-serve hosts tab sections-->
+            <div class="central-serve">
+                <div class="sp-wrap">
+                    <p id="services" class="s-tag">OUR SERVICES</p>
+                    <div class="tab-btns">
+                      <!--Its easier to use p elements, rather than anchor tags; the later may cause problems at the server-->
+                        <p class="web-create active tabBtn"   onclick="openTab(event, 'webDesign')" id="defaultOpen">Web Development</p>
+                        <p class="web-host tabBtn" onclick="openTab(event, 'webHosting')">Web Hosting</p>
+                        <p class="site-m tabBtn" onclick="openTab(event, 'siteManagement')">Web Management</p>
+                    </div>
+
+                       <!--The tab on focus opens web development process illustrated in three stages-->
+    <!--Web Development tab-->
+                    <div id="webDesign" class="tabcontent wd-tab">
+                      <h2 class="tc-title tab-title">Your Website in three simple steps:</h2>
+                      <div class="tab-items">
+                          <a href="#" class="wd-box wd">
+                                <div class="sb-svg">
+                                  <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                              <defs>
+                                <image width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAABNBJREFUeJztW01y2kgU/rrRYpbkBKOcYDwnMJWavckJTE4w9iYeBVSWS6g6eINvYHyCIQeYMrmB5wZwA7uKRaYK+s0CSWk1+um2A4qBr4qC1tdSP570PbXeUzPk4HO/f0JER3ncawVj7OGvXu/L2na1IcLwkgFnBDS3Z9r2wIBHAm48379Stq0g+v1bEHVqsWzbYGzk9XofgNgBIgwDAJdKlxmAMYDHrRu3GTQBtAH8qmy78nw/cACAAX/Sd+LO8/3ONq3bEs5EGI4AnAKr/wwgYIMwbEvg77jTzPN9tyYDtwIRhlPEVwIH3nMJqNF+XItV28Uk+SGBI0cj1zQ/6PdPJZELAJyx6UWvd2fD/4SYqg1e1lNEUUcSjQAEAAJJNBJR1DHlXwNKHbAP0CWQgdftjkQUAVK6AADOp163OzLlXwNKHQCs/uRL+J8dey+BvXeALoFjEYaXuT13B8dqQ3dAK/7sDQ4S0NpfoUwVdxQtKDLQHTDxfD/YpjXbRvzonzpg7yVwcEDdBtSNgwPqNqBuHBxQtwF14+CAug2oG3vvgMqMEAAIIVwsFqcNzr987HYfing4zp3neVNTXs0o50HPMqfH0dBoNCYfP336avJfdBg5AMvlPQB3uaodvi3isVwa8yKKOlLK27JhJRFEFLE07ZYcZ+3wS4gwnMBxPuSdgDKYSYDoTfztXkdRpmx+HUVHSM5iNf8mJZJEqg1KrhYALSyX98Ph0KqybXYFMDYB0cnKBmoBSGUQt6G183nGJgUj5D+Gl2eZkxK3i7jeByL323weADgr2GcNRg7gwEQCJwAgV8/TNwkntQxSGc+Lcw3Wj+FqfxFFEyRyYuwEFg4wkgBTzhwjyuTUbNqs+Ap4ETJXSblM1mDkgDjyPwEAAc1E59dRdKS/TVLCP+XdQX4EtHLcvzb7msUAIDcO6PpPkMv/4LOfZq8ZcyFlR6GsKtzGDsiLA5r+Z4jr7nl8if6BgnR8RbU5AAAQZTZyxqzeajGeCebFgYzeOQ/K+Ar9txBXmNXPc6rNkmhos4+xA/Q4IKKoo+o7DkSF/Ab0f6V87pKxAQBS3gohXJODmMcAIBMHQHSZ2W7CF8N6HqDfNofDYfPbfD4B8BsAYLEIAHQqxrVzgBoH1NtNou8qvgQvTsefn58/DsIwSN93Yuy4YpfENnMU6TjZXsVvGhe+//0OYDgfsHKAGgcUpPqu4jeNQRi21XFN9rHPB+hn07a9IQyHwyZlX/Y0mg/YBUFoOse6vqv4AljPAzL9GXP/m8/bmVmp4wQG49o7gK0ifbZtwReghZyy/Fo+IIsg/UWEzHSIc+O8gLUEYj3P4uZM13cVrxhpZKCGWRXPgfc27y1ZXwGrvZwWFosOHCd3oAbn7aWU7QbnhTpce8MsD/o8IBk3ryvwkLkLGOJZDogvr6CIj896ZeS3fcOsatznYO+zwgcH1G1A3Tg4oG4D6sbBAXUbUDd0B+zkekENrtrgXJ2wrIoKuw0lUcKBBx5PH1fPzkSu6PdLC5avGfHiUDduPl34/jiZCt8geZYm6oh+v8WAMRHtxMJJxliTgLaWJboB1KWzyqLCPUC6OLSRbPnn/n78x7t3DMDvAH6pybBN4wnAwPP9tHjK8nrFq0l3avl80ePy/wh/bMAVOXvZAAAAAElFTkSuQmCC" id="img_2" />
+                              </defs>
+                              <g>
+                                <use xlink:href="#img_2" fill="#FFFFFF" stroke="none" />
+                              </g>
+                            </svg>
+                                </div>
+                              <div class="sb-winfo">
+                                <p class="wd-title">Design Template</p>
+                              <p class="wd-text">Find a template and theme colors that suit your style.</p>
+                              </div>
+                          </a>
+  
+                          <a href="#" class="wd-box wc">
+                            <div class="sb-svg">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                  <image width="64" height="64" xlink:href="data:image/png;base64,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" id="img_3" />
+                                </defs>
+                                <g>
+                                  <use xlink:href="#img_3" fill="#FFFFFF" stroke="none" />
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="sb-winfo">
+                              <p class="wd-title">Web Content</p>
+                              <p class="wd-text">Web content includes headings, text and images that will be in your website..</p>
+                          
+                            </div>    
+                          </a>
+  
+                          <a href="#" class="wd-box wt">
+                            <div class="sb-svg">
+                              <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                              <defs>
+                                <image width="100" height="100" xlink:href="data:image/png;base64,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" id="img_4" />
+                              </defs>
+                              <g>
+                                <use xlink:href="#img_4" fill="#FFFFFF" stroke="none" transform="scale(0.64 0.64)" />
+                              </g>
+                            </svg>
+                            </div>
+                            <div class="sb-winfo">
+                              <p class="wd-title">Turn Around Time</p>
+                              <p class="wd-text">72hrs and your site will be live.</p>
+                          
+                            </div>    
+                          </a>
+                      </div>
+
+                      
+                  </div>
+
+                  <!--Web Hosting Tab-->
+                  <div class="tabcontent wh-tab" id="webHosting">
+                      <h2 class="wh-title tab-title">Web Hosting Options</h2>
+                      <div class="tab-items">
+                          <a href="#" class="wh-f">
+                              <div class="sb-svg">
+                                <?xml version="1.0" encoding="utf-8"?>
+                              <svg id="f-wh-icon" width="64px" height="64px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                  <path d="M0 0L50 0L50 50L0 50L0 0Z" id="path_2" />
+                                  <clipPath id="mask_2">
+                                    <use xlink:href="#path_2" />
+                                  </clipPath>
+                                </defs>
+                                <g id="Ioxhost-icon">
+                                  <path d="M0 0L50 0L50 50L0 50L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+                                  <g clip-path="url(#mask_2)">
+                                    <path d="M32.2917 27.0834L17.7083 27.0834C16.5625 27.0834 15.625 26.1459 15.625 25L15.625 25C15.625 23.8542 16.5625 22.9167 17.7083 22.9167L32.2917 22.9167C33.4375 22.9167 34.375 23.8542 34.375 25L34.375 25C34.375 26.1459 33.4375 27.0834 32.2917 27.0834L32.2917 27.0834Z" id="Shape" fill="#FFC107" stroke="none" />
+                                    <path d="M25 9.375C33.6458 9.375 40.625 16.3542 40.625 25C40.625 33.6458 33.6458 40.625 25 40.625C16.3542 40.625 9.375 33.6458 9.375 25C9.375 16.3542 16.3542 9.375 25 9.375M25 5.20834C14.0625 5.20834 5.20833 14.0625 5.20833 25C5.20833 35.9375 14.0625 44.7917 25 44.7917C35.9375 44.7917 44.7917 35.9375 44.7917 25C44.7917 14.0625 35.9375 5.20834 25 5.20834L25 5.20834L25 5.20834Z" id="Shape" fill="#48479C" fill-rule="evenodd" stroke="none" />
+                                    <path d="M47.9167 15.625L17.7083 15.625C16.5625 15.625 15.625 16.5625 15.625 17.7083L15.625 17.7083C15.625 18.8542 16.5625 19.7917 17.7083 19.7917L47.9167 19.7917C49.0625 19.7917 50 18.8542 50 17.7083L50 17.7083C50 16.5625 49.0625 15.625 47.9167 15.625L47.9167 15.625ZM32.2917 30.2083L2.08333 30.2083C0.9375 30.2083 0 31.1458 0 32.2916L0 32.2916C0 33.4375 0.9375 34.375 2.08333 34.375L32.2917 34.375C33.4375 34.375 34.375 33.4375 34.375 32.2916L34.375 32.2916C34.375 31.1458 33.4375 30.2083 32.2917 30.2083L32.2917 30.2083Z" id="Shape" fill="#48479C" fill-rule="evenodd" stroke="none" />
+                                  </g>
+                                </g>
+                              </svg>
+                              </div>
+
+                              <div class="sb-winfo">
+                                <p class="wh-title">Free Web Hosting</p>
+                              <p class="wh-text">Host your website for free!</p>
+                              
+                              </div>
+                          </a>
+  
+                          <a href="#" class="wh-f">
+                            <div class="sb-svg">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="64px" height="64px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                  <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_h2" />
+                                </defs>
+                                <use xlink:href="#img_h2" fill="#FFFFFF" stroke="none" transform="scale(0.5208333 0.5208333)" />
+                              </svg>
+                            </div>
+
+                              <div class="sb-winfo">
+                                <p class="wh-title">Paid Web Hosting</p>
+                              <p class="wh-text">Host your website from <span class="wh-amt">&dollar;3/mo only.</span></p>
+                              
+                              </div>
+                          </a>  
+
+                      </div>
+                  </div>
+
+                  <!--Web Management-->
+                  <div class="tabcontent sm-tab" id="siteManagement">
+                      <h2 class="sm-title tab-title">Site Management</h2>
+                      <div class="tab-items">
+                          <a href="#" class="sm-you">
+                              <div class="sb-svg">
+                                <?xml version="1.0" encoding="utf-8"?>
+                                <svg id="sm-icon" width="64px" height="64px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                  <defs>
+                                    <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_wm1" />
+                                  </defs>
+                                  <g>
+                                    <use xlink:href="#img_wm1" fill="#FFFFFF" stroke="none" transform="scale(0.5208333 0.5208333)" />
+                                  </g>
+                                </svg>
+                              </div>
+
+                              <div class="sb-winfo">
+                                <p class="sm-title">Manage My Site</p>
+                              <p class="sm-text">Upload and update content such as text, images etc, on you website.</p>
+                              
+                              </div>
+                          </a>
+  
+                          <a href="#" class="sm-you">
+                            <div class="sb-svg">
+                              <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="64px" height="64px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                              <defs>
+                                <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAAC7tJREFUeJztXF9sHEcZ/83e3p7tsxNf2gTnT7GDkqa0VYhRKyKh0qRSK4pU6EMJSIgqIKGqCKnhBakoL6gPBV4aXiohHopoH4taCYk+oNJWFKk4VWNCCSmtErukbv6Q2D77cnd7O/PxsLt3e7ezO7N7azsX9qeM7m7nm2++/X0z33wzuzGQI0eOHDly5MiRI0eOHDly/D+BbbQBuvjLyX8dEoy9wICp7hry//k/5wyG79137+ffXF8L08HcaAN04Qj6LWM0ST7V3R8B0JQgvABg9/pZlx4D4wAiPkkECfE9LnB/Tq2PVf1jYBwguPC+kWTUo8cPUokbEoPjAMHDtFLoywBR72JgHMCF6PwgOc2kqL8RMTAOEJxH1vUuzIOEwXFAcAZ4TFPnaw8GxxMD5IDADKBeigeH8F4MkANEgPgIwtuRaHAcouWAg28sTrUEew4MB7BBOTavn4qupLBbvvj6UowXJFUJfKYQnWOEWcvEj985XJlT6VI64OAbi1MtYqfAMK5toS5I+lWK0Bog3X8FLygyJQ2bUmKKgKlGC4cOvLE4PatwgtIBDuEE0EO+6uYjkX7ktdeAyL57jij6IDLcNpWycdg4AeDROCGlAwSx+yONyGraaujp7IT9JvGjoENiSk8kC2BR+IJKwFDaQTRORCBCuEByLaIgrkCq6y0ysfvUgxV26sEKE4IvC8EhBAcXHEIICB4oXp1X5mcfqrDZhyoMRbYbhLf8vnTtJblN6nvxGrmc0VTfDlB2FmkoJSrtO/O/F3E0GD+JxKNciHneJp33kC4ghIDDxbzj0FG/3ezhyhwEO5qCPLcg2X34gzXITxyUIYiSBNNspi1AAAOWgpe++81H3kQfGVii+4hU0vWRCTRCUMJpmyYEyUZdk79y4LXFqX5v8MBri1NE/IXEISjm/mLjk1faM1sB9T5AqUPneDg5COwQQZzf/8erfankJNB+8NelIFqbxi1nhmxDUKix9GvfujaaPAp9SQ+tGdBXP6HGcm1afWwoeRENkl0OQWMGqFWuK3lZERdTlWUXKqgd0PcU8PWgrWfP1Xdx5PQz2Fn9d5dAMBPt/XzqW2ckCiP6SWxYRk1STC/9EJTRnX15/mV8++8/Q4F410sxBPdn8NPHR1vvhXQp2mDy4vRkGILUK6lOZw+c+x2+9sHzGLGrLsN+iVHgO6LQbEavRZqLsxYSkqejS4Vk+wDI01/V7vLxUz/FY+//3CU/AAaAeY6IekNMCGDnwml8/Z1n5Tl3V4Kvmc9HFejdj9aOH3r7AK2jCPWGK3pbvvfK33Dw41dBIrigt1V34ryMfAdo1d36+/75Ij63MLP25KFDXuyxSWhUSvpRkqt3GKcceXGjyiffN0pwwDANlEYL3UYDKBQZyreYKI0VwGCg1QAgOiL3fPiqetRlSF4/syl4X3FIkIbGCUVX7f3vybYOwzRw++ERjG6xwIwCwApgrHsxcEniIMGxcsXGmT/VYVfdZwE7rn6gNIhCXzIAhRVmpT7hRiym24iqSm2hbf9tB0oYvaUEZhTBjIJbWAHdDnDJB+MY28aw737CP/5QAwjYcfWs3oAI2aR1B5q6shXP5CiCIn8ACDxHqXx2GEbBAjPMjhOYgW4HCBDjIOaAGMP4LoCXAaNa07Yn3sA+xBPp0RPOJgRF9k24OrwDW64vAONjKA5ZLvGFIgzD9MKQAeY5gEBgJEDMgGDuNUYEa7uFVrWGxfIO5X2tC3maC6wONEJQypc8vEYfb7oDldoCxreQN/JNj3yzE4ICZBNxAAwGAEGuQ3buamLuLHChcodiQIQrF04voFlrhetCiihwPbiaisDqKtwsggQgBKzREnZ86W5NS+TQ2gckS+26E4z/jO0DCaBcRifut4sJVjBhFIowCu7MaDsmUMY3c4CATyr7YjMcmR0u+WsDe+W6OttSIKMQFC304a33AASUb7HAmOHGfGaAsUKHbH8NYJ1RSEx0yRMxfDRxT/oQtEaQJEiJoLER03sGGlXu2nIOKDCYJS/bYcwlnDGXYDDAKACGm/u3HeTJAAyV20oAAfs/cy6Qn+vk+QRrpJieHQWs0ZEO+RFRQQWN01BoeThK5EmcwIWtcDdeXecNrOcT4VO4QHV5kuFJnMDLdETdaQATd21XC/UuD7qCkGRlCWdDshCUYr5dYhMoT57H0KjRHhbtbIeEOxPakce7RgLUs7hs2gtcwkS4+z7IS1KdSDyBruRZUEJDL2I79mw63yaXKEC+/7ab5wEiARK84wSidrvSOHCBtsv3ARtEXqwazfw9eRbUrugu8jWA8Hs/ZHiEEzkuycLxSguCu4VEK3DdlW2nfQBeFkdiM67E5zSyguj1JdF7Tprobyes0c/b9BW8bb2H0+IBCGbA4Aao7XcCkX8e5PVFHCS8mcAdCM8hj1jvde2qde29fPYSWvW12QcUyxa2Tt+pNioG/T+U13T2nxsH8cDwDIgxuC+KFMGIwJgAMf+1ET/kcG82uDPi9cbBRKMqaJNL/tqgtVqPXBd1rc3sKEJF0Iv1x3C49FcIeHGPBKhnJ+w6gMM/DfXD0kvXH1MPBKlRSRskR79v3Gk9D9COeTGxdcaexvOrj4O4DeE0IbjtfucNCMcrvOHVuzLEbfyi+kPM2NMRsTsc4HufDxSH124fUCwPq9cbBbJ/LyhG+Pna97HAJ/DM2LNgxMFEofNMst1Z50j6ePVpvNp4OF6pArfu3RayK702CRkxLOv0kyIEydVqiuGV+sO44EzgN5ueglnw09BOCAIAhwM/qP4KJ1vT4bVTZXAk9EeSllhG4W1DXk2csadxeQkYLgHDFjBkubUNG6jbQL0JzDjT3YqyIi+rPD+jztb+1URPAbcdNFcaaFQbcBotYL9LdL0pb3X5zCcwh4oobRrG0NgQDMu84chTiWUUgvQMiZJq1ZpYvVyFXbO19PgQnGDXbNg1GyufLsMasTC6bRPMcikReYvnrqDVCKSi7fsJ5P3ezruT6zsAd2AOWajcfbuewSkHR2aHcb1wGi2sXFyKJP6D+iT2Dc9H1vUuPnatiWvnr8AqWxidGIdZkmc3vaa2Gk5i23041+uR906yXyl40nsvCPGpVu/xcH2xhsW5K7BXm5ENjs89gRU+EupuhY/g+NwTkebYNRtLc5fRWKrpHTP0iUSvt6C770zSUN3jVv9y/doqVi8uKzs+W5/EV98/gZ/segn3jrkv3p5cuRO/vPAdVHk5uiO4pwHVhUWMcoGhLaOxRJslE04z3W7YHB7S3oiGoNlO+TfjJn49H1YVoby5XEN1YUlemXo4yrKAzoWxHVtQ2lzuJwpIu1RV6qaqV360O5bjlFlQ+CJxgdVLS7qmQc6YbLbJ9HXa1j69hmJ5GKxgaC/O65Xnr08W5FXXr61C8EAgVO3MpHplG4cIOe+ycATqV5cxvHW8q7pfpE0+kiKzVxNb1xteKuddkAmFqiRyKRzjrNaAW8ejqlNC1mfspVTI7L2gVq2uPWq7roV+9gpR9/UuB7l1rZVWj9/WgLwUjTIKQZq9id6nJapwQuHroU2SZh0UT6GyJC95RSwycwBjALWdoB613Q7qJTdGXlIXPKZIx09C8qSJSTpohSCvz1iUd27F9YVLELaDMFnyUZvMEXIYVhEju3bpHxpmRZ6GknUNQYWREYztkfy14CynbAx5iTZMfZEnW7fSI6UDkk/ZFK1idaUTyY48VTKni8xCkBYUSuKr4zOb1GZkFcxTZlt6p6Ea2m5O8tYo9wwgk/8nrIubibyskirtP1ejOxMSITIkp1tjMhHv6/66G2f1VsQyAZsVfa3blF0b8sI3k8U4Y0TyJ04BaPzVRHoTwDeklTcxeTLVmlVBzKoElA4wTPMYtZxDQjYLElqjbHhjkRcjrNbAgGWTWcc05NQYf+78FG85JxjhAAGTMiP6fEMvoKivag1hPQ0hKe2OaR5gs5ZhHVt6evecbqscOXLkyJEjR44cOXLkyJEjR44cOXLkyJEjx82L/wGk6bd+vRGXdAAAAABJRU5ErkJggg==" id="img_wm2" />
+                              </defs>
+                              <use xlink:href="#img_wm2" fill="#FFFFFF" stroke="none" transform="scale(0.5208333 0.5208333)" />
+                            </svg>
+                            </div>
+
+                              <div class="sb-winfo">
+                                <p class="sm-title">Hire a Website Administrator</p>
+                              <p class="sm-text">Hire an experienced website administrator to do the heavy lifting for you.</p>
+                              </div>
+                          </a>    
+                      </div>
+                      
+                  </div>
+    
+                </div>
+            </div>
+            <!--Projects  section-->
+
+            <div class="project-wrapper">
+              <p class="pro-title s-tag">TEMPLATES</p>
+              <div class="projo slider">
+                <!--Several project cards-->
+                <div class="pcard">
+                  <div class="img-num">1 / 3</div>
+                  <img src="./images/shoe-store-akk.PNG" alt="Shoe Store" class="pimg">
+                  <div class="caption" style="color: black;"><strong>SHOE STORE</strong></div>
+                </div>
+
+                <div class="pcard">
+                  <div class="img-num">2 / 3</div>
+                  <img src="./images/gov-akk.PNG" alt="Government Site" class="pimg">
+                  <div class="caption" style="color: black;"><strong>GOVERNMENT SITE</strong></div>
+                </div>
+
+
+                <div class="pcard fade">
+                  <div class="img-num">3 / 3</div>
+                  <img src="./images/cosmetics-akk.PNG" alt="Consmetics Site" class="pimg">
+                  <div class="caption" style="color: black;"><strong>COSMETICS SITE</strong></div>
+                </div>
+
+                <!--Next and previous buttons-->
+                <!--hrefs should never be left empty; if left empty, there amy be problems while serving the site-->
+                <p onclick="plusSlides(-1)" class="prev">&#10094</p>
+                <p onclick="plusSlides(1)" class="next">&#10095</p>
+              </div>
+              <!--The indicators-->
+              <div class="" style="text-align: center; display: none;">
+                <span class="ind" onclick="currentSlide(1)"></span>
+                <span class="ind" onclick="currentSlide(2)"></span>
+                <span class="ind" onclick="currentSlide(3)"></span>
+              </div>
+            </div>
+
+            <!--STATISTICS banner-->
+
+            <div class="stats-banr">
+              <div class="sb num-county">
+                <p class="stats">23&plus;</p>
+                <p class="stat-title">Counties</p>
+              </div>
+
+              <div class="sb num-clients">
+                <p class="stats">2500&plus;</p>
+                <p class="stat-title">Return clients</p>
+              </div>
+
+              <div class="sb num-projects">
+                <p class="stats">1230&plus;</p>
+                <p class="stat-title">Projects</p>
+              </div>
+
+              <div class="sb num-employees">
+                <p class="stats">300&plus;</p>
+                <p class="stat-title">Employees</p>
+              </div>
+            </div>
+
+            <!--start review us section-->
+            <!--We have used the carousel for our projects to render testimonials-->
+
+            
+
+
+            <!--About us section-->
+            <div class="ab-s ab-wrap">
+              <div class="ab-img">
+                <img src="./images/control.jpg" width="50" alt="Two women working with a desktop computer" id="ab_img">
+              </div>
+              <div class="ab-info">
+                <p class="ab-title">ABOUT AKKADIAN</p>
+                <p class="ab_stitle">A Few Words About Us</p>
+                <p class="ab-text">Our Web Developers Company is a leading tech firm of Website Developers, Software Engineers and Web Administrators
+                  with offices across Kenya. We aim to provide you:
+                  <ul class="ab-list">
+                    <li>High End Software & Software Services</li>
+                    <li>Responsive Websites</li>
+                    <li>Reliable Web Hosting Services</li>
+                    <li>24hr Web, server administration & Support</li>
+                  </ul>
+                </p>
+                <div class="abs-btns">
+                  <a href="./404.html" class="rdm-btn abs-bk">Read More</a>
+                  <a href="./help.html" class="contact-btn abs-wbk">Help</a>
+              </div>
+
+              </div>
+            </div>
+
+            <div class="testimonial-container">
+              <p class="test-title">Testimonials</p>
+              <div class="tiles-wrapper">
+                <div class="tile">
+                    <div class="tile-num">1/3</div>
+                    <!--The section below can be replaced by an image and caption to create a gallery slideshow-->
+                    
+                    <div class="test-tile">
+                        <!--First testimony-->
+                      <div class="test-bg left">
+                        <div class="test test-one left">
+                          <img src="./images/css-command.jpg" alt="Testimonial Four Profile Picture" class="test-img">
+                          <div class="test-ts-bg left">
+                            <p class="test-titl bolder left">Clinton Ashu</p>
+                            <p class="test-occ smaller left">Founder, <a href="/web-name" class="tweb-link">S Automotives</a></p>
+                            <p class="test-test left"><span class="quote">&quot;</span> Outstanding customer care support! I reached out to them and they got back to me right away and fixed my issue in less than an hour. Good at what they do!</p>
+                          </div>
+                        </div>
+                      </div>
+          
+                      <!--second testimony-->
+                      <div class="test-bg right border-color">
+                        <div class="test test-one right">
+                          <img src="./images/css-command.jpg" alt="Testimonial Two Profile Picture" class="test-img">
+                          <div class="test-ts-bg right">
+                            <p class="test-titl bolder right">Alison Nasike</p>
+                            <p class="test-occ smaller right">COO, <a href="/website-made" class="tweb-link">Grocries Online</a></p>
+                            <p class="test-test left"><span class="quote">&quot;</span>I entrusted my 3 domains to them for three years. I hope to work with them even longer.</p>
+                          </div>
+                        </div>
+                      </div>
+          
+                      </div>
+                </div>
+          
+          
+                <div class="tile">
+                    <div class="tile-num">2/3</div>
+                    <div class="test-tile">
+                        <!--First testimony-->
+                      <div class="test-bg left">
+                        <div class="test test-one left">
+                          <img src="./images/css-command.jpg" width="60" alt="Testimonial Four Profile Picture" class="test-img">
+                          <div class="test-ts-bg left">
+                            <p class="test-titl bolder left">Martin Maingi</p>
+                            <p class="test-occ smaller left">Founder, <a href="/web-name" class="tweb-link">Currency Corporation</a></p>
+                            <p class="test-test left"><span class="quote">&quot;</span> Will definitely hire them again!</p>
+                            
+                          </div>
+                        </div>
+                      </div>
+          
+                      <!--second testimony-->
+                      <div class="test-bg right border-color">
+                        <div class="test test-one ">
+                          <img src="./images/css-command.jpg" alt="Testimonial Two Profile Picture" class="test-img">
+                          <div class="test-ts-bg right">
+                            <p class="test-titl bolder ">Jessicca Pearson</p>
+                            <p class="test-occ smaller ">CTO, <a href="/website-made" class="tweb-link">Parrezo Arts</a></p>
+                            <p class="test-test left"><span class="quote">&quot;</span> Highly recommended!</p>
+          
+                          </div>
+                        </div>
+                      </div>
+          
+                      </div>
+                </div>
+          
+          
+                <div class="tile">
+                    <div class="tile-num">3/3</div>
+                    <div class="test-tile">
+                        <!--First testimony-->
+                      <div class="test-bg left">
+                        <div class="test test-one left">
+                          <img src="./images/css-command.jpg" width="60" alt="Testimonial Four Profile Picture" class="test-img">
+                          <div class="test-ts-bg left">
+                            <p class="test-titl bolder left">Linet Nasike</p>
+                            <p class="test-occ smaller left">Start Up, <a href="/web-name" class="tweb-link">Youth Online</a></p>
+                            <p class="test-test left"><span class="quote">&quot;</span> Superior designs!</p>
+          
+                          </div>
+                        </div>
+                      </div>
+          
+                      <!--second testimony-->
+                      <div class="test-bg right border-color">
+                        <div class="test test-one right">
+                          <img src="./images/css-command.jpg" alt="Testimonial Two Profile Picture" class="test-img">
+                          <div class="test-ts-bg right">
+                            <p class="test-titl bolder right">Arleen Anyango</p>
+                            <p class="test-occ smaller right">COO, <a href="/website-made" class="tweb-link">XTR CHEMICALS LTD</a></p>
+                            <p class="test-test left"><span class="quote">&quot;</span> Outstanding customer care support! I reached out to them and they got back to me right away and fixed my issue in less than an hour. Good at what they do!</p>
+          
+                          </div>
+                        </div>
+                      </div>
+          
+                      </div>
+                </div>
+          
+                <!--Next and previous buttons-->
+                <p onclick="addSlide(-1)" class="prev tprev">&#10094;</p>
+                <p onclick="addSlide(1)" class="next tnext">&#10095;</p>
+          
+            </div>
+            <br>
+          
+            <!--Indicators-->
+            <div class="indicators" style="text-align: center;">
+                <span class="ind" onclick="currentPage(1)"></span>
+                <span class="ind" onclick="currentPage(2)"></span>
+                <span class="ind" onclick="currentPage(3)"></span>
+            </div>
+          
+            </div>
+              
+
+            <!--Call back form template-->
+            <div class="call-back-main">
+              <div class="call-back-info">
+                  <p class="call-back-title">Request A Call Back</p>
+                  <p class="call-back-txt">Leave us your details. We will call back and advise you.</p>
+              </div>
+              <form action="mail.php" class="call-back-form">
+                  <div class="form-call-x form-call">
+                      <input type="text" name="clientName" class="call-back-input cb-name" id="clientName" placeholder="Your Name">
+                      <input type="text" name="clientPhone" id="clientPhone" class="call-back-input cb-phone" placeholder="Phone Number">
+                      <textarea cols="20" name="clientRequest" id="clientRequest" class="call-back-input cb-request" placeholder="Your Request"></textarea>
+                  </div>
+                  <div class="form-call-y form-call">
+                      <input type="email" name="clientEmail" id="clientEmail" class="call-back-input cb-email" placeholder="Your Email">
+                      <input type="submit" value="Send" class="call-back-input cb-submit" id="clientSubmit">
+                  </div>
+              </form>
+          </div>
+
+            <!--Banner section-->
+            <!--
+              <div class="banner">
+              <div class="bn-bx">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <image width="96" height="96" xlink:href="data:image/png;base64,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" id="img_1" />
+                  </defs>
+                  <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.5208333 0.5208333)" />
+                </svg>
+                <div class="bn-info">
+                  <p class="bn-title">24/7 Technical Support</p>
+                  <p class="bn-text">Reach us Anytime</p>
+                </div>
+              </div>
+
+
+              <div class="bn-bx">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <image width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABHNCSVQICAgIfAhkiAAABYRJREFUeJztne154zYMx8E+HcDdQCOkE5w7wXmDqBMkG5w7gbNBvEHcCaybILkJnA2sTPDvB1KNoogUKPFFUvB7nvtwtglCAAWCIKUQCYIgCIIgCIIgCMJXQuVWwAWADRHdEdGOiG4yqzOVExH9rZSq2x/O1gEAdkT0SESb3LoEpFJK/dX+YJYOMMZ/yq1HDJRSH2w+OweYsHOhdY38/+k64Ldciji4p5Uan4h+dj+YowO+51YgEv+STiY+MMcQBJ/fd2/ppTHHO8CHX7kVmMrSHfCQW4HVAT4vuXVdJVzjm3Q1lg4bALcAzuZfQ/P/25j9Z4Vh+DJi3xsABwBXxiC4AjjE0iUbtqtN0O8NgGeG4bs8A1h6neqdHA4wxueMehvX1TghtQMAFBON33ZC4dv/0tPQEBwoTOljY2Qtm5R3AIDtwKh+QCu0QIeqh4E22xi6JiOxA04OQ5aOdqWj3SmGrslI5QDo2G9jz2i/d7QvQuubBOg8PJUD7i1d1WAssoyutUXGPVeP7JOwGYl3AJ6J6OrZdge9Mm2ymDP4MdiWNh67+7Z9mN8cPWXPA+jJ7ADg4riNnXeAMb6NLUOHytL2U83eIcOmQ+VnkQQA+A7gESNz7h55NgOyDOBoy05JYQ+Z7Ds56mYG9GR0R0QlTcy1uxsvfU5pUSul/hjQrbe97wbPVDm/+3TmA4AflG9/dzG7ZMEdYG7hM8WfiH4S0TfLd6P3CgBsOJNw81vLV2/c/oJmQSbkjDH+LyL6h4j+9Gjj2g3bM9p/OqFg2HroYPtt+s0iMyFd+NMqTtC5eNGR04ulzx30ZNzk4xWYaSiAo6Ur9jYn7GWJI1dGMAA8MY1ewpFp+Dhgor62hdjVpV+r/Qb2jI69EAsC3LURQI/MgikrlQPWUYoYGAmsi+nIS+IA09fyi3Fwl2e9j40kdsBQOfqAz+Xow0CbbQxdbRdw41BkVCYwxQF4X22393bPxmiFpY3rLvAl+eg/O5TZjpTZy0CbLXgZ2CM6Eyz0XGCravpQI3Hsd8XB4wS5vVh+W8A9CPq4oLOBDn0nT3FC3ZUZFbgnXlY93SG7l57+f0ww2HNXR2gnvIyQ9YLUJyLgnngn5cA2oa3vd/Bb8Nk4Oq6NczfUGJFkTAYRJt6OfBtjws0QhUWHDXSIPeFj2bsCYzEZlQEjbAPIn8prYyAMn2LYT7dIQhBp4u30MZbaZlCHE6oQOicBESfeTj9jOMGRAsJedriE0DkJjlEEBCo+wXEqwsIr+NXPXkLoHR1EnnhNH7fg7xdbw41FtmsDPxVPGBslEHHihXauS34XZ7jpke+7TxGT8xgDxVrxNg9DcHmBp7Mx/dh5cMYYKdaK98zU2SvctOTPzviAvwOiTLwYLgM3HDHCyZip8eGT9iLixAv3bhQwIty0ZJeYp/FP8BlMiL/i7avD15h2Zw1tjWKK/GQMXEiQAhT0/NKuPj54jRA/nRvKELpHBYlWvK3+bqbKBC+bKgOpHBe4J94yt35doHe5XNRY0mNDjtFf5datC9P48z6r3wbu7GQ2FwIdJocOgi3L+A3oP3c/m7eSGOMPPdGefpswFOYC2/PAbJ768zD+8l+kYS62yK1HA3jvcliH8ecGeKUFv5WmwINp/GNuPVcJdNFOjJ8D8EoLs8nOVgXT+GVuPVeJGD8jGC4tiPFjwTD+MksLS0CMnwnwSgti/BhAL7AuA8aX0kJooEveQyFHjB8KE2a+Qb+U6cww/Nc2vhmhnKfeYzHqLNBqQPinUHzY577+1Hx6rw6Q5cj2GxHtlFJVhr6zkv2lfaRfU1N8ReP3Ave72ELxCh3ri9zXm5u+EFSQfhlSqL9m9EbvLzCqiOiklJK/fiEIgiAIgiAIgiAIX5L/ADTh8aq6HsrNAAAAAElFTkSuQmCC" id="img_1" />
+                  </defs>
+                  <use xlink:href="#img_1" fill="#FFFFFF" stroke="none" transform="scale(0.5208333 0.5208333)" />
+                </svg>
+                <div class="bn-info">
+                  <p class="bn-title">Online Payment</p>
+                  <p class="bn-text">Pay using safe & verified payment methods</p>
+                </div>
+              </div>
+
+
+              //add a mail subscription for newslatters;
+            </div>
+            -->
+
+
+
+            
+        </main>
+
+        <!--The footer is a template from https://www.sautomitives.com - therefore class names ...-->
+
+        <footer class="foo">
+          <div class="foo-link-wrap">
+              <div class="foo-uno loc-tags address-box">
+                  <a href="index.html" class="home-auto x-title">
+                  Akkadian
+                  </a>
+                  <div class="foo-loc-tag  ad-tag">
+                      <?xml version="1.0" encoding="utf-8"?>
+                      <svg  width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <image width="100" height="100" xlink:href="data:image/png;base64,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" id="img_5" />
+                        </defs>
+                        <g>
+                          <use xlink:href="#img_5" fill="#FFFFFF" stroke="none" transform="scale(0.2 0.2)" />
+                        </g>
+                      </svg>
+                      <div class="loc-tag">
+                          <address>
+                              Haile Selassie Rd,<br>
+  Moi Avenue,CBD,<br>
+  Nairobi, Kenya<br>
+                          </address>
+                      </div>
+                      
+                  </div>
+  
+                  
+                  <div class="call-box ad-tag">
+                      
+                  </div>
+  
+                  <div class="email-box ad-tag">
+                              
+                  <address>
+                      <a href="mailto:info@akkadiansoftware.com" class="email-tag ad-tag">info@akkadiansoftware.com</a><br>
+                      <a href="mailto:sales@akkadiansoftware.com" class="email-tag ad-tag">sales@akkadiansoftware.com</a>
+                      </address>
+                  </div>
+  
+  
+              </div>
+              <div class="foo-uno f-link useful web-tags">
+                  <p class="foo-link-title">Akkadian Main</p>
+                  <a href="./blog.html" class="p-a-home sec-link">Our Blog</a>
+                  <a href="./aboutus.html" class="about-us sec-link">About Us</a>
+                  <a href="./faq.html" class="cont-us sec-link">Faq</a>
+                  <a href="./404.html" class="cust-rev sec-link">Customer Reviews</a>
+                  <a href="./policy.html" class="p-policy sec-link">Privacy Policy</a>
+                  <a href="./404.html" class="t-c sec-link">Terms and Conditions</a>
+
+                  
+              </div>
+              <div class="foo-uno f-link v-tags-w-linktags">
+                  <p class="foo-link-title">Free Web Hosting</p>
+                  <a href="https://tiiny.host/" target="_blank" class="toyota-foo sec-link">Tiiny Host</a>
+
+                  <a href="https://www.gatsbyjs.com/products/cloud/" target="_blank" class="suv-sec sec-link">Gatsby</a>
+                  <a href="https://www.netlify.com/" target="_blank" class="trucks-sec sec-link">Netlify</a>
+                  <a href="https://vercel.com/" target="_blank" class="minbus-sec sec-link">Vercel</a>
+                  <a href="https://pages.github.com/" target="_blank"  class="bus-foo sec-link">Github Pages</a>
+                  <a href="https://surge.sh/" target="_blank" class="mach-foo sec-link">Surge</a>
+              </div>
+              <div class="foo-uno f-link cat-tags w-cat-tags">
+                  <p class="foo-link-title">Paid Web Hosting</p>
+                  <a href="https://domains.safaricom.co.ke/" target="_blank" class="faq sec-link">Safaricom Domains</a>
+                  <a href="https://wordpress.com/" target="_blank" class="nissan-foo sec-link">Wordpress</a>
+                  <a href="https://www.thcservers.com/" target="_blank" class="mits-foo sec-link">THCServers</a>
+                  <a href="https://www.bluehost.com/" target="_blank" class="benz-foo sec-link">Bluehost</a>
+                  <a href="https://www.webhostkenya.co.ke/" target="_blank" class="mazda-foo sec-link">WebHostKenya</a>
+                  <a href="https://cloud.google.com/solutions/web-hosting" target="_blank" class="ford-foo sec-link">Google Cloud</a>
+              </div>
+              <div class="foo-uno f-link cat-tags misc-tags">
+                  <p class="foo-link-title">Partners</p>
+                  <a href="https://www.microsoft.com/en-ke/store/b/home" target="_blank" class="volk-foo sec-link">Microsoft</a>
+                  <a href="https://www.apple.com/ke/" target="_blank" class="isuzu-foo sec-link">Apple</a>
+                  <a href="https://www.safaricom.co.ke/" target="_blank" class="bmw-foo sec-link">Safaricom</a>
+                  <a href="https://www.mozilla.org/en-US/" target="_blank" class="el-foo sec-link">Mozilla</a>
+                  <a href="https://about.google/products/" target="_blank" class="shand-foo sec-link">Google</a>
+                  <a href="https://aws.amazon.com/" target="_blank" class="brandnew-foo sec-link">Amazon</a>
+              </div>
+          </div>
+          <div class="crights-box">
+              <p class="c-right">&copy; 2023 Akkadian Software. All rights reserved.</p>
+          </div>
+      </footer>
+      <script src="testimonialScript.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "content": {
+    "href": "./policy.html"
+  }
+});
+</script>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/23537574.js"></script>
+<!-- End of HubSpot Embed Code -->
+    </body>
+</html>
